@@ -1,0 +1,9 @@
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\bin\Debug\netcoreapp3.1\CoreLibrary.deps.json
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\bin\Debug\netcoreapp3.1\CoreLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\bin\Debug\netcoreapp3.1\CoreLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.csproj.AssemblyReference.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.AssemblyInfoInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.AssemblyInfo.cs
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.pdb

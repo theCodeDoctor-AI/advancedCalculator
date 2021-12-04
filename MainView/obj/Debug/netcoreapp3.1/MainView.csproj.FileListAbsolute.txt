@@ -1,0 +1,15 @@
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.exe
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.deps.json
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.runtimeconfig.json
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.runtimeconfig.dev.json
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\MainView.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.csproj.AssemblyReference.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.Form1.resources
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.csproj.GenerateResource.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.AssemblyInfoInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.AssemblyInfo.cs
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.csproj.CoreCompileInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.genruntimeconfig.cache
