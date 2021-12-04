@@ -6,6 +6,8 @@ namespace CoreLibrary
 {
     public class Base
     {
+        #region Prime Methods
+        // Check if number is prime
         public static bool isPrime(int number)
         {
             if (number == 0 || number == 1)
@@ -21,5 +23,40 @@ namespace CoreLibrary
             }
             return true;
         }
+
+        // Prime Factorization
+
+        // Build List of Primes
+        #endregion
+
+        #region Factorial Methods
+        // For Large Numbers
+        public static long Factorial(long number)
+        {
+            if (number == 0 || number == 1)
+            {
+                return 1;
+            }
+            for(int i = 0; i > 1; i--)
+            {
+                number *= i;
+            }
+            return number;
+        }
+
+        // For Smaller Numbers
+        public static int Factorial(int number)
+        {
+            if (number == 0 || number == 1)
+            {
+                return 1;
+            }
+            for (int i = 0; i > 1; i--)
+            {
+                number *= i;
+            }
+            return number;
+        }
+        #endregion
     }
 }
