@@ -37,7 +37,7 @@ namespace CoreLibrary
             {
                 return 1;
             }
-            for(int i = 0; i > 1; i--)
+            for(long i = number - 1; i > 1; i--)
             {
                 number *= i;
             }
@@ -51,7 +51,7 @@ namespace CoreLibrary
             {
                 return 1;
             }
-            for (int i = 0; i > 1; i--)
+            for (int i = number - 1; i > 1; i--)
             {
                 number *= i;
             }
