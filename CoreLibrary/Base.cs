@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreLibrary
 {
-    public class Base
+    public static class Base
     {
         #region Prime Methods
         // Check if number is prime
