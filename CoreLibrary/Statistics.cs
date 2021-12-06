@@ -41,35 +41,38 @@ namespace CoreLibrary
         #endregion
 
         #region Median
-        public static double Mean(params int[] numbers)
+        public static int Median(params int[] numbers)
         {
             double location = (numbers.Length + 1.0) / 2;
             if (CheckIfDecimal(location))
             {
                 int locationInt = Convert.ToInt32(location);
-                return (numbers[locationInt] + numbers[locationInt + 1]) / 2;
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2;
             }
             else
             {
-                return numbers[Convert.ToInt32(location)];
+                return numbers[Convert.ToInt32(location) - 1];
             }
         }
 
-        public static double Mean(params double[] numbers)
-        {
-            double loc = (numbers.Count() + 1) / 2;
-
-            return (CheckIfDecimal(loc)) ? 
-                (numbers[ (int) Math.Floor(loc) ] + 1 ) / 2 : 
-                numbers[(int) Math.Ceiling(loc)];
-        }
-
-        public static double Mean(params float[] numbers)
+        public static double Median(params double[] numbers)
         {
             double loc = (numbers.Count() + 1) / 2;
 
             return (CheckIfDecimal(loc)) ?
-                (numbers[(int)Math.Floor(loc)] + 1) / 2 : numbers[(int)Math.Ceiling(loc)];
+                (numbers[(int)Math.Floor(loc) - 1] + 
+                numbers[(int)Math.Ceiling(loc)]) / 2 : 
+                numbers[(int)loc - 1];
+        }
+
+        public static float Median(params float[] numbers)
+        {
+            double loc = (numbers.Count() + 1) / 2;
+
+            return (CheckIfDecimal(loc)) ?
+                (numbers[(int)Math.Floor(loc) - 1] + 
+                numbers[(int)Math.Ceiling(loc)]) / 2 : 
+                numbers[(int)loc - 1];
         }
 
         #endregion
