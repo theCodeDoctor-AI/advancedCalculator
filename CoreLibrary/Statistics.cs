@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using static CoreLibrary.Base;
 
 namespace CoreLibrary
 {
@@ -40,7 +41,37 @@ namespace CoreLibrary
         #endregion
 
         #region Median
-        // Median
+        public static double Mean(params int[] numbers)
+        {
+            double location = (numbers.Length + 1.0) / 2;
+            if (CheckIfDecimal(location))
+            {
+                int locationInt = Convert.ToInt32(location);
+                return (numbers[locationInt] + numbers[locationInt + 1]) / 2;
+            }
+            else
+            {
+                return numbers[Convert.ToInt32(location)];
+            }
+        }
+
+        public static double Mean(params double[] numbers)
+        {
+            double loc = (numbers.Count() + 1) / 2;
+
+            return (CheckIfDecimal(loc)) ? 
+                (numbers[ (int) Math.Floor(loc) ] + 1 ) / 2 : 
+                numbers[(int) Math.Ceiling(loc)];
+        }
+
+        public static double Mean(params float[] numbers)
+        {
+            double loc = (numbers.Count() + 1) / 2;
+
+            return (CheckIfDecimal(loc)) ?
+                (numbers[(int)Math.Floor(loc)] + 1) / 2 : numbers[(int)Math.Ceiling(loc)];
+        }
+
         #endregion
 
         #region Mode
