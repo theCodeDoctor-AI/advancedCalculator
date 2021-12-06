@@ -59,10 +59,20 @@ namespace CoreLibrary
         }
         #endregion
 
-        public static  bool CheckIfDecimal() 
+        // Clearly typed method
+        public static bool CheckIfDecimal(double number) 
         {
+            if (number % 1 == 0)
+            {
+                return false;
+            }
+            return true;
+        }
 
-            return !false;
+        // A little crafty
+        public static bool CheckIfDecimal(float number)
+        {
+            return (number % 1 == 0) ? false : true;
         }
     }
 }
