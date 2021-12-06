@@ -9,7 +9,7 @@ namespace CoreLibrary
     {
         #region Mean
         // The raw dog method lol
-        public static double FindMean(params int[] numbers) 
+        public static double Mean(params int[] numbers) 
         {
             double result = 0;
             foreach (int num in numbers)
@@ -20,27 +20,32 @@ namespace CoreLibrary
         }
 
         // Achieves same as raw dog with a little linq
-        public static double FindMean(params double[] numbers) 
+        public static double Mean(params double[] numbers) 
         {
             double result = numbers.Sum();
             return result / numbers.Count();
         }
 
         // Nice one liner
-        public static float FindMean(params float[] numbers) 
+        public static float Mean(params float[] numbers) 
         {
             return numbers.Average();
         }
 
         // same again taking a list of doubles (can take a list of ints as well)
-        public static double FindMean(List<double> numbers) 
+        public static double Mean(List<double> numbers) 
         {
             return numbers.Average();
         }
         #endregion
 
         #region Median
-        // Median
+        //public double Median(params int[] numbers)
+        //{
+        //    double location = numbers.Length / 2;
+            
+        //}
+
         #endregion
 
         #region Mode

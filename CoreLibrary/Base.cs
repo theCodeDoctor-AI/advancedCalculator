@@ -58,5 +58,11 @@ namespace CoreLibrary
             return number;
         }
         #endregion
+
+        public static  bool CheckIfDecimal() 
+        {
+
+            return !false;
+        }
     }
 }

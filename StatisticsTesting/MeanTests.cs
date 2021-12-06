@@ -15,7 +15,7 @@ namespace StatisticsTesting
             double expected = 5.5;
 
             // Act
-            double actual = Statistics.FindMean(intTest);
+            double actual = Statistics.Mean(intTest);
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -29,7 +29,7 @@ namespace StatisticsTesting
             double expected = 5.055714285714286;
 
             // Act
-            double actual = Statistics.FindMean(doubleTest);
+            double actual = Statistics.Mean(doubleTest);
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -43,7 +43,7 @@ namespace StatisticsTesting
             float expected = 5.055714f;
 
             // Act
-            float actual = Statistics.FindMean(floatTest);
+            float actual = Statistics.Mean(floatTest);
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -57,7 +57,7 @@ namespace StatisticsTesting
             double expected = 5.055714285714286;
 
             // Act
-            double actual = Statistics.FindMean(doubleTest);
+            double actual = Statistics.Mean(doubleTest);
 
             // Assert
             Assert.AreEqual(expected, actual);
