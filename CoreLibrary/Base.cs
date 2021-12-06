@@ -74,5 +74,10 @@ namespace CoreLibrary
         {
             return (number % 1 == 0) ? false : true;
         }
+
+        public static bool CheckIfDecimal(int number)
+        {
+            return (number % 1 == 0) ? false : true;
+        }
     }
 }

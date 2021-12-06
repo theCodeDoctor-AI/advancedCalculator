@@ -21,7 +21,7 @@ namespace ConsoleTests
             // Looking for isInt() solution
             WriteLine("\nIs Int\n;");
             int num1 = 5;
-            double num2 = 6.0, num3 = 5.7, num4 = 5.2;
+            double num2 = 6.0, num3 = 5.7;
 
             WriteLine($"{num1} % 1 = {num1 % 1}");
             WriteLine($"{num2} % 1 = {num2 % 1}");
