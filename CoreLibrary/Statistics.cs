@@ -98,37 +98,88 @@ namespace CoreLibrary
         #endregion
 
         #region Mode
-        public static int Mode(params int[] numbers)
+        public static List<int> Mode(List<int> numbers)
         {
-            int highestFreqDigit = 0;
+            List<int> highestFreqDigits = new List<int>();
+            int highFreq = 0;
             foreach(int num in numbers)
             {
                 int indexFreq = numbers.Count(x => x == num);
-                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
             }
-            return highestFreqDigit;
+            return highestFreqDigits;
         }
 
-        public static double Mode(params double[] numbers)
+        public static List<double> Mode(List<double> numbers)
         {
-            double highestFreqDigit = 0.0;
-            foreach (double num in numbers)
+            List<double> highestFreqDigits = new List<double>();
+            double highFreq = 0.0;
+            foreach (int num in numbers)
             {
                 int indexFreq = numbers.Count(x => x == num);
-                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
             }
-            return highestFreqDigit;
+            return highestFreqDigits;
         }
 
-        public static float Mode(params float[] numbers)
+        public static List<float> Mode(List<float> numbers)
         {
-            float highestFreqDigit = 0.0f;
-            foreach (float num in numbers)
+            List<float> highestFreqDigits = new List<float>();
+            float highFreq = 0.0f;
+            foreach (int num in numbers)
             {
                 int indexFreq = numbers.Count(x => x == num);
-                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
             }
-            return highestFreqDigit;
+            return highestFreqDigits;
         }
         #endregion
 
