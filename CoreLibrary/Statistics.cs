@@ -98,7 +98,38 @@ namespace CoreLibrary
         #endregion
 
         #region Mode
-        // Mode
+        public static int Mode(params int[] numbers)
+        {
+            int highestFreqDigit = 0;
+            foreach(int num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+            }
+            return highestFreqDigit;
+        }
+
+        public static double Mode(params double[] numbers)
+        {
+            double highestFreqDigit = 0.0;
+            foreach (double num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+            }
+            return highestFreqDigit;
+        }
+
+        public static float Mode(params float[] numbers)
+        {
+            float highestFreqDigit = 0.0f;
+            foreach (float num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+                highestFreqDigit = (indexFreq > highestFreqDigit) ? num : highestFreqDigit;
+            }
+            return highestFreqDigit;
+        }
         #endregion
 
         #region Variance
