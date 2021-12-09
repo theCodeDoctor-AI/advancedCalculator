@@ -26,17 +26,7 @@ namespace ConsoleTests
             WriteLine($"{expected3}, {actual3}");
 
             List<int> listInts = new List<int>() { 1, 2, 2, 3, 4, 5, 6, 5 };
-            List<int> expected = new List<int>() { 2, 5 };
-
-            //Act 
-            List<int> actual = Statistics.Mode(listInts);
-            actual.Sort();
-
-            //Assert
-            for (int i = 0; i < expected.Count; i++)
-            {
-                WriteLine($"Expected {expected[i]}, Actual {actual[i]}");
-            }
+            List<int> expected = new List<int>() { 2, 5 };                  
         }
     }
 }
