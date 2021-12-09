@@ -59,6 +59,7 @@ namespace CoreLibrary
         }
         #endregion
 
+        #region CheckForDecimal
         // Clearly typed method
         public static bool CheckIfDecimal(double number) 
         {
@@ -79,5 +80,6 @@ namespace CoreLibrary
         {
             return (number % 1 == 0) ? false : true;
         }
+        #endregion
     }
 }

@@ -98,7 +98,89 @@ namespace CoreLibrary
         #endregion
 
         #region Mode
-        // Mode
+        public static List<int> Mode(List<int> numbers)
+        {
+            List<int> highestFreqDigits = new List<int>();
+            int highFreq = 0;
+            foreach(int num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
+            }
+            return highestFreqDigits;
+        }
+
+        public static List<double> Mode(List<double> numbers)
+        {
+            List<double> highestFreqDigits = new List<double>();
+            double highFreq = 0.0;
+            foreach (int num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
+            }
+            return highestFreqDigits;
+        }
+
+        public static List<float> Mode(List<float> numbers)
+        {
+            List<float> highestFreqDigits = new List<float>();
+            float highFreq = 0.0f;
+            foreach (int num in numbers)
+            {
+                int indexFreq = numbers.Count(x => x == num);
+
+                if (indexFreq >= highFreq)
+                {
+                    if (indexFreq == highFreq)
+                    {
+                        if (!highestFreqDigits.Contains(num))
+                        {
+                            highestFreqDigits.Add(num);
+                        }
+                    }
+                    else
+                    {
+                        highFreq = indexFreq;
+                        highestFreqDigits.Clear();
+                        highestFreqDigits.Add(num);
+                    }
+                }
+            }
+            return highestFreqDigits;
+        }
         #endregion
 
         #region Variance
