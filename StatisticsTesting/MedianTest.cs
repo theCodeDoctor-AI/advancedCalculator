@@ -21,13 +21,13 @@ namespace StatisticsTesting
 
             int expected1 = 3;
             double expected2 = 3.6;
-            int expected3 = 13;
-            float expected4 = 13.45f;
+            int expected3 = 12;
+            float expected4 = 12.45f;
 
             // Act 
-            int actual1 = Statistics.Median(numbers1);
+            double actual1 = Statistics.Median(numbers1);
             double actual2 = Statistics.Median(numbers2);
-            int actual3 = Statistics.Median(numbers3);
+            double actual3 = Statistics.Median(numbers3);
             float actual4 = Statistics.Median(numbers4);
 
             // Assert
