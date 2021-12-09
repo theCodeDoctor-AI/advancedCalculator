@@ -17,12 +17,13 @@ namespace ConsoleTests
 
             int[] numbers1 = { 1, 2, 3, 4, 5 };
             int expected1 = 3;
-            int actual1 = Statistics.Median(numbers1);
+            double actual1 = Statistics.Median(numbers1);
             WriteLine($"{expected1}{actual1}");
 
             int[] numbers3 = { 2, 6, 9, 15, 18, 20 };
-            int expected3 = 13;
-            int actual3 = Statistics.Median(numbers3);
+            int expected3 = 12;
+            double actual3 = Statistics.Median(numbers3);
+            WriteLine($"{expected3}, {actual3}");
         }
     }
 }

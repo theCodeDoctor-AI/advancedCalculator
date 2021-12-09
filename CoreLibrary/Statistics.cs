@@ -41,38 +41,58 @@ namespace CoreLibrary
         #endregion
 
         #region Median
-        public static int Median(params int[] numbers)
+        public static double Median(params int[] numbers)
         {
             double location = (numbers.Length + 1.0) / 2;
             if (CheckIfDecimal(location))
             {
-                int locationInt = Convert.ToInt32(location);
+                int locationInt = (int)Math.Floor(location);
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2;
             }
             else
             {
-                return numbers[Convert.ToInt32(location) - 1];
+                return numbers[(int)Math.Floor(location) - 1];
             }
         }
 
         public static double Median(params double[] numbers)
         {
-            double loc = (numbers.Count() + 1) / 2;
+            double loc = (numbers.Count() + 1.0) / 2.0;
+            //int lower = (int)Math.Floor(loc);
+            //int upper = (int)Math.Ceiling(loc);
 
-            return (CheckIfDecimal(loc)) ?
-                (numbers[(int)Math.Floor(loc) - 1] + 
-                numbers[(int)Math.Ceiling(loc)]) / 2 : 
-                numbers[(int)loc - 1];
+            if (CheckIfDecimal(loc))
+            {
+                int locationInt = (int)Math.Floor(loc);
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
+
+                //double sum = numbers[lower] + numbers[upper];
+                //return sum / 2.0;
+            }
+            else
+            {
+                return numbers[(int)Math.Floor(loc) - 1];
+            }
         }
 
         public static float Median(params float[] numbers)
         {
-            double loc = (numbers.Count() + 1) / 2;
+            double loc = (numbers.Count() + 1.0) / 2.0;
+            //int lower = (int)Math.Floor(loc);
+            //int upper = (int)Math.Ceiling(loc);
 
-            return (CheckIfDecimal(loc)) ?
-                (numbers[(int)Math.Floor(loc) - 1] + 
-                numbers[(int)Math.Ceiling(loc)]) / 2 : 
-                numbers[(int)loc - 1];
+            if (CheckIfDecimal(loc))
+            {
+                int locationInt = (int)Math.Floor(loc);
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0f;
+
+                //double sum = numbers[lower] + numbers[upper];
+                //return sum / 2.0;
+            }
+            else
+            {
+                return numbers[(int)Math.Floor(loc) - 1];
+            }
         }
 
         #endregion
