@@ -15,7 +15,14 @@ namespace MainView
         public Form1()
         {
             InitializeComponent();
+            SetUpDefaults();
         }
 
+        private void SetUpDefaults()
+        {
+            welcomeLabel.Text = "Enter a series of numbers separated each by a space \nand then click the button when your all done";
+            buttonSuccessLabel.Text = "";
+            buttonSuccessLabel.Visible = false;
+        }
     }
 }

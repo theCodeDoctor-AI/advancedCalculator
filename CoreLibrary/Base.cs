@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreLibrary
 {
-    public class Base
+    public static class Base
     {
         #region Prime Methods
         // Check if number is prime
@@ -56,6 +56,29 @@ namespace CoreLibrary
                 number *= i;
             }
             return number;
+        }
+        #endregion
+
+        #region CheckForDecimal
+        // Clearly typed method
+        public static bool CheckIfDecimal(double number) 
+        {
+            if (number % 1 == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        // A little crafty
+        public static bool CheckIfDecimal(float number)
+        {
+            return (number % 1 == 0) ? false : true;
+        }
+
+        public static bool CheckIfDecimal(int number)
+        {
+            return (number % 1 == 0) ? false : true;
         }
         #endregion
     }
