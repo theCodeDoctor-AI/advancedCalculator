@@ -49,6 +49,10 @@ namespace MainView
             this.iqrTxt = new System.Windows.Forms.TextBox();
             this.varianceTxt = new System.Windows.Forms.TextBox();
             this.stddevTxt = new System.Windows.Forms.TextBox();
+            this.rightListBox = new System.Windows.Forms.ListBox();
+            this.leftListBox = new System.Windows.Forms.ListBox();
+            this.leftErrorLabel = new System.Windows.Forms.Label();
+            this.rightErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inputTxt
@@ -215,11 +219,51 @@ namespace MainView
             this.stddevTxt.Size = new System.Drawing.Size(125, 27);
             this.stddevTxt.TabIndex = 19;
             // 
+            // rightListBox
+            // 
+            this.rightListBox.FormattingEnabled = true;
+            this.rightListBox.ItemHeight = 20;
+            this.rightListBox.Location = new System.Drawing.Point(1027, 22);
+            this.rightListBox.Name = "rightListBox";
+            this.rightListBox.Size = new System.Drawing.Size(272, 204);
+            this.rightListBox.TabIndex = 20;
+            // 
+            // leftListBox
+            // 
+            this.leftListBox.FormattingEnabled = true;
+            this.leftListBox.ItemHeight = 20;
+            this.leftListBox.Location = new System.Drawing.Point(12, 22);
+            this.leftListBox.Name = "leftListBox";
+            this.leftListBox.Size = new System.Drawing.Size(282, 204);
+            this.leftListBox.TabIndex = 21;
+            // 
+            // leftErrorLabel
+            // 
+            this.leftErrorLabel.AutoSize = true;
+            this.leftErrorLabel.Location = new System.Drawing.Point(12, 513);
+            this.leftErrorLabel.Name = "leftErrorLabel";
+            this.leftErrorLabel.Size = new System.Drawing.Size(50, 20);
+            this.leftErrorLabel.TabIndex = 22;
+            this.leftErrorLabel.Text = "label1";
+            // 
+            // rightErrorLabel
+            // 
+            this.rightErrorLabel.AutoSize = true;
+            this.rightErrorLabel.Location = new System.Drawing.Point(724, 513);
+            this.rightErrorLabel.Name = "rightErrorLabel";
+            this.rightErrorLabel.Size = new System.Drawing.Size(50, 20);
+            this.rightErrorLabel.TabIndex = 23;
+            this.rightErrorLabel.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.rightErrorLabel);
+            this.Controls.Add(this.leftErrorLabel);
+            this.Controls.Add(this.leftListBox);
+            this.Controls.Add(this.rightListBox);
             this.Controls.Add(this.stddevTxt);
             this.Controls.Add(this.varianceTxt);
             this.Controls.Add(this.iqrTxt);
@@ -269,6 +313,10 @@ namespace MainView
         private System.Windows.Forms.TextBox iqrTxt;
         private System.Windows.Forms.TextBox varianceTxt;
         private System.Windows.Forms.TextBox stddevTxt;
+        private System.Windows.Forms.ListBox rightListBox;
+        private System.Windows.Forms.ListBox leftListBox;
+        private System.Windows.Forms.Label leftErrorLabel;
+        private System.Windows.Forms.Label rightErrorLabel;
     }
 }
 
