@@ -38,6 +38,11 @@ namespace CoreLibrary
         {
             return numbers.Average();
         }
+
+        public static double FindMean(List<int> numbers)
+        {
+            return numbers.Average();
+        }
         #endregion
 
         #region Median
@@ -92,6 +97,20 @@ namespace CoreLibrary
             else
             {
                 return numbers[(int)Math.Floor(loc) - 1];
+            }
+        }
+
+        public static double Median(List<int> numbers)
+        {
+            double location = (numbers.Count + 1.0) / 2;
+            if (CheckIfDecimal(location))
+            {
+                int locationInt = (int)Math.Floor(location);
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2;
+            }
+            else
+            {
+                return numbers[(int)Math.Floor(location) - 1];
             }
         }
 

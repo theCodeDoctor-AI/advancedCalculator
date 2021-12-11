@@ -13,3 +13,8 @@ C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\M
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.dll
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.pdb
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.genruntimeconfig.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\CoreLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\ModelLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\CoreLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\ModelLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.csproj.CopyComplete

@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "CoreLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CoreLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreLibrary.dll": {}
+        }
+      },
+      "ModelLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ModelLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CoreLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CoreLibrary/CoreLibrary.csproj",
+      "msbuildProject": "../CoreLibrary/CoreLibrary.csproj"
+    },
+    "ModelLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ModelLibrary/ModelLibrary.csproj",
+      "msbuildProject": "../ModelLibrary/ModelLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CoreLibrary >= 1.0.0",
+      "ModelLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Mark\\.nuget\\packages\\": {},
@@ -41,7 +76,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\CoreLibrary\\CoreLibrary.csproj": {
+              "projectPath": "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\CoreLibrary\\CoreLibrary.csproj"
+            },
+            "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\ModelLibrary\\ModelLibrary.csproj": {
+              "projectPath": "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\ModelLibrary\\ModelLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

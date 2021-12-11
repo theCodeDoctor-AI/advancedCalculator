@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using CoreLibrary;
 
 namespace MainView
 {
@@ -21,16 +16,44 @@ namespace MainView
             SetUpEvents();
         }
 
-        private void SetUpDefaults()
+        private void StddevBtn_Click(object sender, EventArgs e)
         {
-            welcomeLabel.Text = "Enter a series of numbers separated each by a space \nand then click the button when your all done";
-            buttonSuccessLabel.Text = "";
-            leftErrorLabel.Text = "";
-            rightErrorLabel.Text = "";
+            throw new NotImplementedException();
         }
-        private void SetUpEvents()
+
+        private void VarianceBtn_Click(object sender, EventArgs e)
         {
-            allDoneButton.Click += AllDoneButton_Click;
+            throw new NotImplementedException();
+        }
+
+        private void IqrBtn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Percentile_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void QuartileBtn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ModeBtn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void MedianBtn_Click(object sender, EventArgs e)
+        {
+            medianTxt.Text = Statistics.Median(inputNumbers).ToString();
+        }
+
+        private void MeanBtn_Click(object sender, EventArgs e)
+        {
+            meanTxt.Text = Statistics.FindMean(inputNumbers).ToString();
         }
 
         private void AllDoneButton_Click(object sender, EventArgs e)
@@ -74,6 +97,27 @@ namespace MainView
             {
                 rightListBox.Items.Add(num);
             }
+        }
+
+        private void SetUpDefaults()
+        {
+            welcomeLabel.Text = "Enter a series of numbers separated each by a space \nand then click the button when your all done";
+            buttonSuccessLabel.Text = "";
+            leftErrorLabel.Text = "";
+            rightErrorLabel.Text = "";
+        }
+
+        private void SetUpEvents()
+        {
+            allDoneButton.Click += AllDoneButton_Click;
+            meanBtn.Click += MeanBtn_Click;
+            medianBtn.Click += MedianBtn_Click;
+            modeBtn.Click += ModeBtn_Click;
+            quartileBtn.Click += QuartileBtn_Click;
+            percentileBtn.Click += Percentile_Click;
+            iqrBtn.Click += IqrBtn_Click;
+            varianceBtn.Click += VarianceBtn_Click;
+            stddevBtn.Click += StddevBtn_Click;
         }
     }
 }
