@@ -77,6 +77,8 @@ namespace MainView
                         inputTxt.Text = "";
                         throw ae;
                     }
+                    buttonSuccessLabel.Text = "Welcome to Version 0.0.1\nStatistics";
+                    buttonSuccessLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 }
                 catch(ArgumentException ae)
                 {
