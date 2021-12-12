@@ -76,7 +76,7 @@ namespace MainView
             // 
             this.buttonSuccessLabel.AutoEllipsis = true;
             this.buttonSuccessLabel.AutoSize = true;
-            this.buttonSuccessLabel.Location = new System.Drawing.Point(630, 206);
+            this.buttonSuccessLabel.Location = new System.Drawing.Point(553, 206);
             this.buttonSuccessLabel.Name = "buttonSuccessLabel";
             this.buttonSuccessLabel.Size = new System.Drawing.Size(50, 20);
             this.buttonSuccessLabel.TabIndex = 2;

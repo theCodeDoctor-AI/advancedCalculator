@@ -203,11 +203,23 @@ namespace CoreLibrary
         #endregion
 
         #region Variance
-        // Variance
+        public static double Variance(List<int> numbers)
+        {
+            double summation = 0.0;
+            foreach(int num in numbers)
+            {
+                summation += Math.Pow(num, 2);
+            }
+            double result = summation / (numbers.Count - 1);
+            return result;
+        }
         #endregion
 
         #region Standard Deviation
-        // Standard Deviation
+        public static double Stddev(List<int> numbers)
+        {
+            return Math.Sqrt(Variance(numbers));          
+        }
         #endregion
 
         #region Quartiles
