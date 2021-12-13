@@ -31,6 +31,7 @@ namespace ConsoleTests
             int powerResult = Base.Power(4, 3);
             WriteLine(powerResult);
 
+            WriteLine($"Square root of 144 is: {Base.SqrRoot(144)}");
         }
     }
 }

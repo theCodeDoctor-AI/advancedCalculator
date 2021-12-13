@@ -106,7 +106,10 @@ namespace CoreLibrary
         #endregion
 
         #region Square Root
-
+        public static double SqrRoot(int number)
+        {
+            return Power(number, 0.5);
+        }
         #endregion
     }
 }
