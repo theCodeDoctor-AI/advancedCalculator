@@ -85,20 +85,22 @@ namespace CoreLibrary
         #region Power
         public static int Power(int number, int exponent)
         {
+            int result = 1;
             for (int i = 0; i < exponent; i++)
             {
-                number *= number;
+                result *= number;
             }
-            return number;
+            return result;
         }
 
         public static double Power(double number, double exponent)
         {
-            for (int i = 0; i < exponent; i++)
+            double result = 1;
+            for (int i = 1; i < exponent; i++)
             {
-                number *= number;
+                result *= number;
             }
-            return number;
+            return result;
         }
 
         #endregion

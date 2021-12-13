@@ -26,7 +26,11 @@ namespace ConsoleTests
             WriteLine($"{expected3}, {actual3}");
 
             List<int> listInts = new List<int>() { 1, 2, 2, 3, 4, 5, 6, 5 };
-            List<int> expected = new List<int>() { 2, 5 };                  
+            List<int> expected = new List<int>() { 2, 5 };
+
+            int powerResult = Base.Power(4, 3);
+            WriteLine(powerResult);
+
         }
     }
 }
