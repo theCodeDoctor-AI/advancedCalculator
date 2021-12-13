@@ -81,5 +81,35 @@ namespace CoreLibrary
             return (number % 1 == 0) ? false : true;
         }
         #endregion
+
+        #region Power
+        public static int Power(int number, int exponent)
+        {
+            int result = 1;
+            for (int i = 0; i < exponent; i++)
+            {
+                result *= number;
+            }
+            return result;
+        }
+
+        public static double Power(double number, double exponent)
+        {
+            double result = 1;
+            for (int i = 1; i < exponent; i++)
+            {
+                result *= number;
+            }
+            return result;
+        }
+
+        #endregion
+
+        #region Square Root
+        public static double SqrRoot(int number)
+        {
+            return Power(number, 0.5);
+        }
+        #endregion
     }
 }
