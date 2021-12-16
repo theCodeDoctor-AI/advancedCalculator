@@ -116,6 +116,23 @@ namespace CoreLibrary
             }
             return root;
         }
+
+        public static double SqrRoot(double number)
+        {
+            double root = 1;
+            int i = 0;
+
+            while (1 == 1)
+            {
+                i = i + 1;
+                root = (number / root + root) / 2;
+                if (i == number + 1)
+                {
+                    break;
+                }
+            }
+            return root;
+        }
         #endregion
     }
 }

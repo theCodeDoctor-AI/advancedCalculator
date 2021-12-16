@@ -218,7 +218,7 @@ namespace CoreLibrary
         #region Standard Deviation
         public static double Stddev(List<int> numbers)
         {
-            return Math.Sqrt(Variance(numbers));          
+            return SqrRoot(Variance(numbers));          
         }
         #endregion
 

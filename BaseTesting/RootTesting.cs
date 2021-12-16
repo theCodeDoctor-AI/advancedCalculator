@@ -20,7 +20,7 @@ namespace BaseTesting
             // Act
             double actual1 = Base.SqrRoot(144);
             double actual2 = Base.SqrRoot(256);
-            double actual3 = Base.SqrRoot(13);
+            double actual3 = Base.SqrRoot(13.0);
 
             // Assert
             Assert.AreEqual(expected1, actual1);
