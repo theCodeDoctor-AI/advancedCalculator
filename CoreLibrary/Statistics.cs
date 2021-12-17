@@ -236,12 +236,12 @@ namespace CoreLibrary
         #region Percentile
         public static double Percentile(double percentile, List<double> numbers)
         {
-            double location = percentile * numbers.Count / 100;
+            double location = percentile * numbers.Count;
             if(CheckIfDecimal(location))
             {
-                return Math.Ceiling(location);
+                return numbers[(int)Math.Ceiling(location) - 1];
             }
-            return Math.Floor(location);
+            return numbers[(int)Math.Floor(location) - 1];
         }
         #endregion
 
