@@ -71,15 +71,9 @@ namespace CoreLibrary
         }
 
         // A little crafty
-        public static bool CheckIfDecimal(float number)
-        {
-            return (number % 1 == 0) ? false : true;
-        }
+        public static bool CheckIfDecimal(float number) => number % 1 != 0;
 
-        public static bool CheckIfDecimal(int number)
-        {
-            return (number % 1 == 0) ? false : true;
-        }
+        public static bool CheckIfDecimal(int number) => number % 1 != 0;
         #endregion
 
         #region Power
@@ -108,7 +102,36 @@ namespace CoreLibrary
         #region Square Root
         public static double SqrRoot(int number)
         {
-            return Power(number, 0.5);
+            double root = 1;
+            int i = 0;
+
+            while (1 == 1)
+            {
+                i = i + 1;
+                root = (number / root + root) / 2;
+                if (i == number + 1)
+                {
+                    break;
+                }
+            }
+            return root;
+        }
+
+        public static double SqrRoot(double number)
+        {
+            double root = 1;
+            int i = 0;
+
+            while (1 == 1)
+            {
+                i = i + 1;
+                root = (number / root + root) / 2;
+                if (i == number + 1)
+                {
+                    break;
+                }
+            }
+            return root;
         }
         #endregion
     }

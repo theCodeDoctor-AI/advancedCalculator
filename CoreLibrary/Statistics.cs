@@ -218,16 +218,31 @@ namespace CoreLibrary
         #region Standard Deviation
         public static double Stddev(List<int> numbers)
         {
-            return Math.Sqrt(Variance(numbers));          
+            return SqrRoot(Variance(numbers));          
         }
         #endregion
 
         #region Quartiles
-        // Quartile 
+        public static double Quartile(int quartile, List<double> numbers)
+        {
+            if(quartile == 1) { return Percentile(0.25, numbers); }
+            if(quartile == 2) { return Percentile(0.50, numbers); }
+            if(quartile == 3) { return Percentile(0.75, numbers); }
+            return 0.0;
+        }
+
         #endregion
 
         #region Percentile
-        // Percentile
+        public static double Percentile(double percentile, List<double> numbers)
+        {
+            double location = percentile * numbers.Count;
+            if(CheckIfDecimal(location))
+            {
+                return numbers[(int)Math.Ceiling(location) - 1];
+            }
+            return numbers[(int)Math.Floor(location) - 1];
+        }
         #endregion
 
         #region Range
