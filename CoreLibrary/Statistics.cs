@@ -231,6 +231,14 @@ namespace CoreLibrary
             return 0.0;
         }
 
+        public static double Quartile(int quartile, List<int> numbers)
+        {
+            if (quartile == 1) { return Percentile(0.25, numbers); }
+            if (quartile == 2) { return Percentile(0.50, numbers); }
+            if (quartile == 3) { return Percentile(0.75, numbers); }
+            return 0.0;
+        }
+
         #endregion
 
         #region Percentile
@@ -238,6 +246,16 @@ namespace CoreLibrary
         {
             double location = percentile * numbers.Count;
             if(CheckIfDecimal(location))
+            {
+                return numbers[(int)Math.Ceiling(location) - 1];
+            }
+            return numbers[(int)Math.Floor(location) - 1];
+        }
+
+        public static double Percentile(double percentile, List<int> numbers)
+        {
+            double location = percentile * numbers.Count;
+            if (CheckIfDecimal(location))
             {
                 return numbers[(int)Math.Ceiling(location) - 1];
             }

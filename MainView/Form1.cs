@@ -18,12 +18,12 @@ namespace MainView
 
         private void StddevBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            stddevTxt.Text = Statistics.Stddev(inputNumbers).ToString();
         }
 
         private void VarianceBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            varianceTxt.Text = Statistics.Variance(inputNumbers).ToString();
         }
 
         private void IqrBtn_Click(object sender, EventArgs e)
@@ -33,17 +33,21 @@ namespace MainView
 
         private void Percentile_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            double selection = Convert.ToDouble(percentileTxt.Text);
+            percentileTxt.Text = "";
+            percentileTxt.Text = Statistics.Percentile(selection, inputNumbers).ToString();
         }
 
         private void QuartileBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            int quartile = Convert.ToInt32(quartileTxt.Text);
+            quartileTxt.Text = "";
+            quartileTxt.Text = Statistics.Quartile(quartile, inputNumbers).ToString();
         }
 
         private void ModeBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            modeTxt.Text = Statistics.Mode(inputNumbers).ToString();
         }
 
         private void MedianBtn_Click(object sender, EventArgs e)
