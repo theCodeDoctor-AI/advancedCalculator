@@ -116,7 +116,7 @@ namespace CoreLibrary
 
         #endregion
 
-        #region Mode
+        #region Mode       
         public static List<int> Mode(List<int> numbers)
         {
             List<int> highestFreqDigits = new List<int>();
