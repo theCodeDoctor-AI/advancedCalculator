@@ -1,0 +1,14 @@
+Version History (Latest on Top)
+
+V0.0.1 - Statistics
+  This is the first release with (somewhat) complete functionality.
+  It needs some bug fixing and some exception handling but it's main purpose
+  was only to throw together a quick UI for interecting with the basic
+  statistics methods.
+  
+  Before moving on to working on the next version some things that need to
+  be looked at improving:
+  
+  - Quartile and Percentile need dropdowns or at the very least some more labelling
+  - Some adjusting the style of the form.
+  - Clear the bug log
