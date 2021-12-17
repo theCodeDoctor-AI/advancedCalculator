@@ -1,0 +1,8 @@
+Bug Reports By Version Number (Newest on Top)
+N = New
+O = Old
+
+V0.0.1 - Statistics
+ N - Mode() is returning a collection?
+ N - Quartile and Percentile need exception handling
+ N - Inputting at the beginning is too sensitive to format inconsistencies
