@@ -225,13 +225,24 @@ namespace CoreLibrary
         #region Quartiles
         public static double Quartile(int quartile, List<double> numbers)
         {
-            
+            if(quartile == 1) { return Percentile(0.25, numbers); }
+            if(quartile == 2) { return Percentile(0.50, numbers); }
+            if(quartile == 3) { return Percentile(0.75, numbers); }
+            return 0.0;
         }
 
         #endregion
 
         #region Percentile
-        // Percentile
+        public static double Percentile(double percentile, List<double> numbers)
+        {
+            double location = percentile * numbers.Count / 100;
+            if(CheckIfDecimal(location))
+            {
+                return Math.Ceiling(location);
+            }
+            return Math.Floor(location);
+        }
         #endregion
 
         #region Range
