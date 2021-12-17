@@ -28,7 +28,7 @@ namespace MainView
 
         private void IqrBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            iqrTxt.Text = (Statistics.Quartile(3, inputNumbers) - Statistics.Quartile(3, inputNumbers)).ToString();
         }
 
         private void Percentile_Click(object sender, EventArgs e)
