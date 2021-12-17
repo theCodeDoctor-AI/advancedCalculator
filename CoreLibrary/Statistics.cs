@@ -223,7 +223,11 @@ namespace CoreLibrary
         #endregion
 
         #region Quartiles
-        // Quartile 
+        public static double Quartile(int quartile, List<double> numbers)
+        {
+            
+        }
+
         #endregion
 
         #region Percentile
