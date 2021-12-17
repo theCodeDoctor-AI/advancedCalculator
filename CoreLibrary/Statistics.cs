@@ -254,8 +254,7 @@ namespace CoreLibrary
         public static int Range(List<int> numbers)
         {
             return numbers.Max() - numbers.Min();
-        }
-    }
+        }    
         #endregion
     }
 }
