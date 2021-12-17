@@ -246,7 +246,16 @@ namespace CoreLibrary
         #endregion
 
         #region Range
-        // Range
+        public static double Range(List<double> numbers)
+        {
+            return numbers.Max() - numbers.Min();
+        }
+
+        public static int Range(List<int> numbers)
+        {
+            return numbers.Max() - numbers.Min();
+        }
+    }
         #endregion
     }
 }
