@@ -52,13 +52,12 @@ namespace MainView
             List<int> modeNumbers = Statistics.Mode(inputNumbers);
             if(modeNumbers.Count == 0)
             {
-                // error label
+                modeTxt.Text = "None";
             }
             else
             {
                 modeTxt.Text = string.Join(',', modeNumbers);                
             }
-            //modeTxt.Text = Statistics.Mode(inputNumbers).ToString();
         }
 
         private void MedianBtn_Click(object sender, EventArgs e)
