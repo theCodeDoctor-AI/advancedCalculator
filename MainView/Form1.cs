@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using CoreLibrary;
+using System.Linq;
 
 namespace MainView
 {
@@ -49,15 +50,15 @@ namespace MainView
 
         private void ModeBtn_Click(object sender, EventArgs e)
         {
-            List<int> modeNumbers = Statistics.Mode(inputNumbers);
-            if(modeNumbers.Count == 0)
-            {
-                modeTxt.Text = "None";
-            }
-            else
-            {
-                modeTxt.Text = string.Join(',', modeNumbers);                
-            }
+            //List<int> modeNumbers = Statistics.Mode(inputNumbers);
+            //if(modeNumbers.Count == 0)
+            //{
+            //    modeTxt.Text = "None";
+            //}
+            //else
+            //{
+            //    modeTxt.Text = string.Join(',', modeNumbers);                
+            //}
         }
 
         private void MedianBtn_Click(object sender, EventArgs e)
@@ -104,17 +105,27 @@ namespace MainView
                 }                
             }
 
+            DisplayInRightBox(inputNumbers);
             DisplayInLeftBox(inputNumbers);
         }
 
         #endregion
 
-        public void DisplayInLeftBox(List<int> numbers)
+        public void DisplayInRightBox(List<int> numbers)
         {
             foreach(int num in numbers)
             {
                 rightListBox.Items.Add(num);
             }
+        }
+
+        public void DisplayInLeftBox(List<int> numbers)
+        {
+            //string output = "Some general stats of your set:" +
+            //    "Total entries: " + inputNumbers.Count + "\n\n" +
+            //    "High: " + inputNumbers.Max() + "\n\n" +
+            //    "Low: " + inputNumbers.Min() + "\n\n";
+            //leftListBox.Items.Add(output);
         }
 
         private void SetUpDefaults()

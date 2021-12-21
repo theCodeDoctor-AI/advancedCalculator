@@ -38,9 +38,9 @@ namespace ConsoleTests
             List<int> medianNumbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             WriteLine($"Median => {Statistics.Median(medianNumbers)}");
 
-            List<int> modeNumbers = Statistics.Mode(medianNumbers);
-            WriteLine("Mode => ");
-            WriteLine($"{string.Join(", ", modeNumbers)}");
+            //List<int> modeNumbers = Statistics.Mode(medianNumbers);
+            //WriteLine("Mode => ");
+            //WriteLine($"{string.Join(", ", modeNumbers)}");
         }
     }
 }
