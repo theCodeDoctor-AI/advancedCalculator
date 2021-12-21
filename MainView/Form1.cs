@@ -16,6 +16,8 @@ namespace MainView
             SetUpEvents();
         }
 
+        #region Button Click Methods
+
         private void StddevBtn_Click(object sender, EventArgs e)
         {
             stddevTxt.Text = Statistics.Stddev(inputNumbers).ToString();
@@ -47,7 +49,16 @@ namespace MainView
 
         private void ModeBtn_Click(object sender, EventArgs e)
         {
-            modeTxt.Text = Statistics.Mode(inputNumbers).ToString();
+            List<int> modeNumbers = Statistics.Mode(inputNumbers);
+            if(modeNumbers.Count == 0)
+            {
+                // error label
+            }
+            else
+            {
+                modeTxt.Text = string.Join(',', modeNumbers);                
+            }
+            //modeTxt.Text = Statistics.Mode(inputNumbers).ToString();
         }
 
         private void MedianBtn_Click(object sender, EventArgs e)
@@ -96,6 +107,8 @@ namespace MainView
 
             DisplayInLeftBox(inputNumbers);
         }
+
+        #endregion
 
         public void DisplayInLeftBox(List<int> numbers)
         {
