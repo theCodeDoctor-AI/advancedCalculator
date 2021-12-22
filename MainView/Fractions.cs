@@ -14,5 +14,6 @@ namespace MainView
         {
             InitializeComponent();
         }
+
     }
 }
