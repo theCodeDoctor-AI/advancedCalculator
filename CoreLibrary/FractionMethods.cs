@@ -24,10 +24,40 @@ namespace CoreLibrary
             return sum;
         }
 
-        //public static Fraction FractionDifference(Fraction first, Fraction second)
-        //{
+        public static Fraction FractionDifference(Fraction first, Fraction second)
+        {
+            Fraction diff = new Fraction();
+            if (first.Denominator == second.Denominator)
+            {
+                diff.Numerator = first.Numerator - second.Numerator;
+                diff.Denominator = first.Denominator;
+            }
+            else
+            {
+                AlignDenomitors(first, second);
+                diff.Numerator = first.Numerator - second.Numerator;
+                diff.Denominator = first.Denominator;
+            }
+            return diff;
+        }
 
-        //}
+        public static Fraction FractionProduct(Fraction first, Fraction second)
+        {
+            Fraction product = new Fraction();
+            product.Numerator = first.Numerator * second.Numerator;
+            product.Denominator = first.Numerator * second.Numerator;
+
+            return product;
+        }
+
+        public static Fraction FractionQuotient(Fraction first, Fraction second)
+        {
+            Fraction quotient = new Fraction();
+            quotient.Numerator = first.Numerator * second.Denominator;
+            quotient.Denominator = first.Denominator * second.Numerator;
+
+            return quotient;
+        }
 
         public static void AlignDenomitors(Fraction first, Fraction second)
         {
