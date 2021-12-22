@@ -100,7 +100,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\ModelLibrary\\ModelLibrary.csproj": {
+                "projectPath": "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\ModelLibrary\\ModelLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

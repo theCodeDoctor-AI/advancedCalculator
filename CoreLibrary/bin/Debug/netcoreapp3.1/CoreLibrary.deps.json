@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "CoreLibrary/1.0.0": {
+        "dependencies": {
+          "ModelLibrary": "1.0.0"
+        },
         "runtime": {
           "CoreLibrary.dll": {}
+        }
+      },
+      "ModelLibrary/1.0.0": {
+        "runtime": {
+          "ModelLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CoreLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModelLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

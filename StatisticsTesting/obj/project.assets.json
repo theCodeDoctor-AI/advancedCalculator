@@ -1664,11 +1664,24 @@
       "CoreLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ModelLibrary": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CoreLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/CoreLibrary.dll": {}
+        }
+      },
+      "ModelLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ModelLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelLibrary.dll": {}
         }
       }
     }
@@ -6118,6 +6131,11 @@
       "type": "project",
       "path": "../CoreLibrary/CoreLibrary.csproj",
       "msbuildProject": "../CoreLibrary/CoreLibrary.csproj"
+    },
+    "ModelLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ModelLibrary/ModelLibrary.csproj",
+      "msbuildProject": "../ModelLibrary/ModelLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {

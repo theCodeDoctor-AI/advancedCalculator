@@ -53,6 +53,7 @@ namespace MainView
             this.leftListBox = new System.Windows.Forms.ListBox();
             this.leftErrorLabel = new System.Windows.Forms.Label();
             this.rightErrorLabel = new System.Windows.Forms.Label();
+            this.modeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inputTxt
@@ -255,11 +256,20 @@ namespace MainView
             this.rightErrorLabel.TabIndex = 23;
             this.rightErrorLabel.Text = "label2";
             // 
+            // modeLabel
+            // 
+            this.modeLabel.AutoSize = true;
+            this.modeLabel.Location = new System.Drawing.Point(362, 421);
+            this.modeLabel.Name = "modeLabel";
+            this.modeLabel.Size = new System.Drawing.Size(0, 20);
+            this.modeLabel.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.rightErrorLabel);
             this.Controls.Add(this.leftErrorLabel);
             this.Controls.Add(this.leftListBox);
@@ -317,6 +327,7 @@ namespace MainView
         private System.Windows.Forms.ListBox leftListBox;
         private System.Windows.Forms.Label leftErrorLabel;
         private System.Windows.Forms.Label rightErrorLabel;
+        private System.Windows.Forms.Label modeLabel;
     }
 }
 

@@ -52,7 +52,7 @@ namespace CoreLibrary
             if (CheckIfDecimal(location))
             {
                 int locationInt = (int)Math.Floor(location);
-                return (numbers[locationInt - 1] + numbers[locationInt]) / 2;
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
             }
             else
             {
@@ -63,40 +63,30 @@ namespace CoreLibrary
         public static double Median(params double[] numbers)
         {
             double loc = (numbers.Count() + 1.0) / 2.0;
-            //int lower = (int)Math.Floor(loc);
-            //int upper = (int)Math.Ceiling(loc);
 
             if (CheckIfDecimal(loc))
             {
-                int locationInt = (int)Math.Floor(loc);
+                int locationInt = (int)loc;
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
-
-                //double sum = numbers[lower] + numbers[upper];
-                //return sum / 2.0;
             }
             else
             {
-                return numbers[(int)Math.Floor(loc) - 1];
+                return numbers[(int)loc - 1];
             }
         }
 
         public static float Median(params float[] numbers)
         {
             double loc = (numbers.Count() + 1.0) / 2.0;
-            //int lower = (int)Math.Floor(loc);
-            //int upper = (int)Math.Ceiling(loc);
 
             if (CheckIfDecimal(loc))
             {
-                int locationInt = (int)Math.Floor(loc);
+                int locationInt = (int)loc;
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0f;
-
-                //double sum = numbers[lower] + numbers[upper];
-                //return sum / 2.0;
             }
             else
             {
-                return numbers[(int)Math.Floor(loc) - 1];
+                return numbers[(int)loc- 1];
             }
         }
 
@@ -105,101 +95,80 @@ namespace CoreLibrary
             double location = (numbers.Count + 1.0) / 2;
             if (CheckIfDecimal(location))
             {
-                int locationInt = (int)Math.Floor(location);
-                return (numbers[locationInt - 1] + numbers[locationInt]) / 2;
+                int locationInt = (int)location;
+                return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
             }
             else
             {
-                return numbers[(int)Math.Floor(location) - 1];
+                return numbers[(int)location - 1];
             }
         }
 
         #endregion
 
         #region Mode       
-        public static List<int> Mode(List<int> numbers)
-        {
-            List<int> highestFreqDigits = new List<int>();
-            int highFreq = 0;
-            foreach(int num in numbers)
-            {
-                int indexFreq = numbers.Count(x => x == num);
+        //public static List<int> Mode(List<int> numbers)
+        //{
+        //    var groups = numbers.GroupBy(n => n);
+        //    int maxCount = groups.Max(g => g.Count());
+        //    int mode = groups.First(g => g.Count() == maxCount).Key;
+        //}
 
-                if (indexFreq >= highFreq)
-                {
-                    if (indexFreq == highFreq)
-                    {
-                        if (!highestFreqDigits.Contains(num))
-                        {
-                            highestFreqDigits.Add(num);
-                        }
-                    }
-                    else
-                    {
-                        highFreq = indexFreq;
-                        highestFreqDigits.Clear();
-                        highestFreqDigits.Add(num);
-                    }
-                }
-            }
-            return highestFreqDigits;
-        }
+        //public static List<double> Mode(List<double> numbers)
+        //{
+        //    List<double> highestFreqDigits = new List<double>();
+        //    double highFreq = 0.0;
+        //    foreach (int num in numbers)
+        //    {
+        //        int indexFreq = numbers.Count(x => x == num);
 
-        public static List<double> Mode(List<double> numbers)
-        {
-            List<double> highestFreqDigits = new List<double>();
-            double highFreq = 0.0;
-            foreach (int num in numbers)
-            {
-                int indexFreq = numbers.Count(x => x == num);
+        //        if (indexFreq >= highFreq)
+        //        {
+        //            if (indexFreq == highFreq)
+        //            {
+        //                if (!highestFreqDigits.Contains(num))
+        //                {
+        //                    highestFreqDigits.Add(num);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                highFreq = indexFreq;
+        //                highestFreqDigits.Clear();
+        //                highestFreqDigits.Add(num);
+        //            }
+        //        }
+        //    }
+        //    return highestFreqDigits;
+        //}
 
-                if (indexFreq >= highFreq)
-                {
-                    if (indexFreq == highFreq)
-                    {
-                        if (!highestFreqDigits.Contains(num))
-                        {
-                            highestFreqDigits.Add(num);
-                        }
-                    }
-                    else
-                    {
-                        highFreq = indexFreq;
-                        highestFreqDigits.Clear();
-                        highestFreqDigits.Add(num);
-                    }
-                }
-            }
-            return highestFreqDigits;
-        }
+        //public static List<float> Mode(List<float> numbers)
+        //{
+        //    List<float> highestFreqDigits = new List<float>();
+        //    float highFreq = 0.0f;
+        //    foreach (int num in numbers)
+        //    {
+        //        int indexFreq = numbers.Count(x => x == num);
 
-        public static List<float> Mode(List<float> numbers)
-        {
-            List<float> highestFreqDigits = new List<float>();
-            float highFreq = 0.0f;
-            foreach (int num in numbers)
-            {
-                int indexFreq = numbers.Count(x => x == num);
-
-                if (indexFreq >= highFreq)
-                {
-                    if (indexFreq == highFreq)
-                    {
-                        if (!highestFreqDigits.Contains(num))
-                        {
-                            highestFreqDigits.Add(num);
-                        }
-                    }
-                    else
-                    {
-                        highFreq = indexFreq;
-                        highestFreqDigits.Clear();
-                        highestFreqDigits.Add(num);
-                    }
-                }
-            }
-            return highestFreqDigits;
-        }
+        //        if (indexFreq >= highFreq)
+        //        {
+        //            if (indexFreq == highFreq)
+        //            {
+        //                if (!highestFreqDigits.Contains(num))
+        //                {
+        //                    highestFreqDigits.Add(num);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                highFreq = indexFreq;
+        //                highestFreqDigits.Clear();
+        //                highestFreqDigits.Add(num);
+        //            }
+        //        }
+        //    }
+        //    return highestFreqDigits;
+        //}
         #endregion
 
         #region Variance
