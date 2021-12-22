@@ -10,11 +10,35 @@ namespace CoreLibrary
         public static Fraction FractionSum(Fraction first, Fraction second)
         {
             Fraction sum = new Fraction();
+            if(first.Denominator == second.Denominator)
+            {
+                sum.Numerator = first.Numerator + second.Numerator;
+                sum.Denominator = first.Denominator + second.Denominator;
+            }
+            else
+            {
+                // Align Denomiators and add
+            }
+            return sum;
         }
 
-        public static Fraction FractionDifference(Fraction first, Fraction second)
-        {
+        //public static Fraction FractionDifference(Fraction first, Fraction second)
+        //{
 
+        //}
+
+        public static void AlignDenomitors(Fraction first, Fraction second)
+        {
+            int LCM = FindLCM(first, second);
+
+            int firstMultiplier = LCM / first.Denominator;
+            int secondMultiplier = LCM / second.Denominator;
+
+            first.Numerator *= firstMultiplier;
+            first.Denominator *= firstMultiplier;
+
+            second.Numerator *= secondMultiplier;
+            second.Denominator *= secondMultiplier;
         }
 
         public static int FindLCM(Fraction first, Fraction second)
