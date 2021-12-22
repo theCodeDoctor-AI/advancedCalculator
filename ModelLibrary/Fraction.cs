@@ -13,7 +13,7 @@ namespace ModelLibrary
 
         // Properties / Getters / Setters
         public int Numerator { get { return _numerator; } set { _numerator = value; } }
-        public int Denomitor
+        public int Denominator
         {
             get { return _denominator; }
             set
@@ -26,15 +26,17 @@ namespace ModelLibrary
         public double DecimalForm 
         {  
             get { return _decimalForm; } 
-            set { _decimalForm = (double)Numerator / Denomitor; } 
+            set { _decimalForm = (double)Numerator / Denominator; } 
         }
 
 
         // Contructor(s)
+        public Fraction() { }
+
         public Fraction(int numerator, int denominator)
         {
             Numerator = numerator;
-            Denomitor = denominator;
+            Denominator = denominator;
         }
 
 
@@ -42,7 +44,7 @@ namespace ModelLibrary
         // String
         public override string ToString()
         {
-            return $"{Numerator} / {Denomitor} or {DecimalForm}";
+            return $"{Numerator} / {Denominator} or {DecimalForm}";
         }
     }
 }
