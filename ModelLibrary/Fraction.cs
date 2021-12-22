@@ -26,7 +26,7 @@ namespace ModelLibrary
         public double DecimalForm 
         {  
             get { return _decimalForm; } 
-            set { _decimalForm = (double)Numerator / Denominator; } 
+            set { _decimalForm = (double)(Numerator / Denominator); } 
         }
 
 
@@ -40,11 +40,10 @@ namespace ModelLibrary
         }
 
 
-
         // String
         public override string ToString()
         {
-            return $"{Numerator} / {Denominator} or {DecimalForm}";
+            return $"{Numerator} / {Denominator}";
         }
     }
 }

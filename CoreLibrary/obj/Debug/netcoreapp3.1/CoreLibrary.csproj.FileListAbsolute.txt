@@ -7,3 +7,6 @@ C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.
 C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.dll
 C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\bin\Debug\netcoreapp3.1\ModelLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\bin\Debug\netcoreapp3.1\ModelLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\CoreLibrary\obj\Debug\netcoreapp3.1\CoreLibrary.csproj.CopyComplete

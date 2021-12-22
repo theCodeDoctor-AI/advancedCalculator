@@ -13,11 +13,13 @@ namespace CoreLibrary
             if(first.Denominator == second.Denominator)
             {
                 sum.Numerator = first.Numerator + second.Numerator;
-                sum.Denominator = first.Denominator + second.Denominator;
+                sum.Denominator = first.Denominator;
             }
             else
             {
-                // Align Denomiators and add
+                AlignDenomitors(first, second);
+                sum.Numerator = first.Numerator + second.Numerator;
+                sum.Denominator = first.Denominator;
             }
             return sum;
         }

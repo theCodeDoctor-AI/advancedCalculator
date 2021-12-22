@@ -2,6 +2,7 @@
 using static System.Console;
 using CoreLibrary;
 using System.Collections.Generic;
+using ModelLibrary;
 
 namespace ConsoleTests
 {
@@ -41,6 +42,12 @@ namespace ConsoleTests
             //List<int> modeNumbers = Statistics.Mode(medianNumbers);
             //WriteLine("Mode => ");
             //WriteLine($"{string.Join(", ", modeNumbers)}");
+
+            WriteLine("\nFractions\n");
+            Fraction first = new Fraction(2, 4);
+            Fraction second = new Fraction(1, 5);
+            Write($"{first} + {second} = ");
+            WriteLine($"{FractionMethods.FractionSum(first, second)}");
         }
     }
 }
