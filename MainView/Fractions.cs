@@ -14,6 +14,17 @@ namespace MainView
         {
             InitializeComponent();
         }
-        
+
+        private void SetUpControls()
+        {
+            operatorComboBox.Items.AddRange(
+                new string[] {
+                    "+",
+                    "-",
+                    "*",
+                    "/"
+                    }
+                );
+        }
     }
 }
