@@ -50,9 +50,23 @@ namespace MainView
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
-            string operation = operatorComboBox.SelectedItem.ToString();
+            // Terminate method if any numerator / denominator is not an integer
+            if (!ValidateNumericals()) { return; }
 
-            switch(operation)
+            // clear error label first
+            operatorErrorLabel.Text = "";
+            // check to make sure operator is selected
+            try
+            {
+                string operation = operatorComboBox.SelectedItem.ToString();
+            }
+            catch (NullReferenceException)
+            {
+                operatorErrorLabel.Text = "Please select an operator first!";
+            }
+
+            // evaluate the 
+            switch (operation)
             {
             }
         }
