@@ -8,13 +8,15 @@ namespace MainView
 {
     public partial class Form1 : Form
     {
-
+        private Fractions _fractionView;
         private List<int> inputNumbers = new List<int>();
+
         public Form1()
         {
             InitializeComponent();
             SetUpDefaults();
             SetUpEvents();
+            _fractionView = new Fractions(this);
         }
 
         #region Button Click Methods
@@ -109,6 +111,12 @@ namespace MainView
             DisplayInLeftBox(inputNumbers);
         }
 
+        private void FractionsViewBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            _fractionView.Show();
+        }
+
         #endregion
 
         public void DisplayInRightBox(List<int> numbers)
@@ -147,6 +155,8 @@ namespace MainView
             iqrBtn.Click += IqrBtn_Click;
             varianceBtn.Click += VarianceBtn_Click;
             stddevBtn.Click += StddevBtn_Click;
+            fractionsViewBtn.Click += FractionsViewBtn_Click;
         }
+
     }
 }

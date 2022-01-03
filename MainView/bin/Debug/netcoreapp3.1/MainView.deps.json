@@ -16,6 +16,9 @@
         }
       },
       "CoreLibrary/1.0.0": {
+        "dependencies": {
+          "ModelLibrary": "1.0.0"
+        },
         "runtime": {
           "CoreLibrary.dll": {}
         }
