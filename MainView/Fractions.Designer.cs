@@ -41,6 +41,7 @@ namespace MainView
             this.fractionLabel = new System.Windows.Forms.Label();
             this.operatorComboBox = new System.Windows.Forms.ComboBox();
             this.equalsButton = new System.Windows.Forms.Button();
+            this.mainViewBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstNumTxt
@@ -139,11 +140,21 @@ namespace MainView
             this.equalsButton.Text = "=";
             this.equalsButton.UseVisualStyleBackColor = true;
             // 
+            // mainViewBtn
+            // 
+            this.mainViewBtn.Location = new System.Drawing.Point(12, 409);
+            this.mainViewBtn.Name = "mainViewBtn";
+            this.mainViewBtn.Size = new System.Drawing.Size(94, 29);
+            this.mainViewBtn.TabIndex = 13;
+            this.mainViewBtn.Text = "Statistics";
+            this.mainViewBtn.UseVisualStyleBackColor = true;
+            // 
             // Fractions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 450);
+            this.Controls.Add(this.mainViewBtn);
             this.Controls.Add(this.equalsButton);
             this.Controls.Add(this.operatorComboBox);
             this.Controls.Add(this.fractionLabel);
@@ -177,5 +188,6 @@ namespace MainView
         private System.Windows.Forms.Label fractionLabel;
         private System.Windows.Forms.ComboBox operatorComboBox;
         private System.Windows.Forms.Button equalsButton;
+        private System.Windows.Forms.Button mainViewBtn;
     }
 }

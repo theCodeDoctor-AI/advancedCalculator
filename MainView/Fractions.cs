@@ -10,9 +10,13 @@ namespace MainView
 {
     public partial class Fractions : Form
     {
-        public Fractions()
+        Form1 mainView;
+        public Fractions(Form1 main)
         {
             InitializeComponent();
+            SetUpControls();
+            SetUpEvents();
+            mainView = main;
         }
 
         private void SetUpControls()
@@ -25,6 +29,17 @@ namespace MainView
                     "/"
                     }
                 );
+        }
+
+        private void SetUpEvents()
+        {
+            mainViewBtn.Click += MainViewBtn_Click;
+        }
+
+        private void MainViewBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            mainView.Show();
         }
     }
 }

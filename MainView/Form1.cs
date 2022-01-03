@@ -8,14 +8,15 @@ namespace MainView
 {
     public partial class Form1 : Form
     {
-        private Fractions _fractionView = new Fractions();
-
+        private Fractions _fractionView;
         private List<int> inputNumbers = new List<int>();
+
         public Form1()
         {
             InitializeComponent();
             SetUpDefaults();
             SetUpEvents();
+            _fractionView = new Fractions(this);
         }
 
         #region Button Click Methods
