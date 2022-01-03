@@ -2,6 +2,7 @@
 using CoreLibrary;
 using ModelLibrary;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace MainView
 {
@@ -10,6 +11,8 @@ namespace MainView
         Fraction first = new Fraction();
         Fraction second = new Fraction();
         Fraction result = new Fraction();
+
+        List<TextBox> textboxes = new List<TextBox>();
 
         Form1 mainView;
         public Fractions(Form1 main)
@@ -32,6 +35,11 @@ namespace MainView
                 );
             operatorErrorLabel.Text = "";
             numberInputErrorLabel.Text = "";
+
+            textboxes.Add(firstNumTxt);
+            textboxes.Add(firstDenTxt);
+            textboxes.Add(secondNumTxt);
+            textboxes.Add(secondDenTxt);
         }
 
         private void SetUpEvents()
@@ -53,6 +61,15 @@ namespace MainView
         {
             Hide();
             mainView.Show();
+        }
+
+        private bool ValidateNumericals()
+        {
+            foreach (TextBox tb in textboxes)
+            {
+                if (!int.TryParse(tb.Text, out int _)) { return false; }
+            }
+            return true;
         }
     }
 }
