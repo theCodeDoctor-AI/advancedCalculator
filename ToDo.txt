@@ -1,0 +1,18 @@
+This is a list of ToDo's / Qol upgrades
+newest on top
+
+N = New
+O = Old
+R = Requires Research
+
+January 03, 2021
+ N - Handle exceoptions on Fractions View
+ N - Title and styling for main view and fractions view
+ O - Quartile and Percentile dropdowns
+ O - Robustisize the input of a set of numbers
+ O - Allow for decimals
+
+December 22, 2021
+ N - Quartile and Percentile dropdowns
+ N - Robustisize the input of a set of numbers
+ N - Allow for decimals
