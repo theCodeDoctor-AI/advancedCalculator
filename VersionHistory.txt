@@ -1,5 +1,18 @@
 Version History (Latest on Top)
 
+V0.0.6
+  Builds Fractions view
+  - Adds controls and sets up events
+  
+V0.0.3
+  This fixes most of the minor bugs present in version 0.0.1
+  - Mode works properly... for now lol
+  - Adds exception hanfling for robustness
+  
+  This version also begins work on Fractions for version 0.1.0
+  - Builds Fraction class 
+  - Adds FractionMethods to Core Library 
+
 V0.0.1 - Statistics
   This is the first release with (somewhat) complete functionality.
   It needs some bug fixing and some exception handling but it's main purpose
