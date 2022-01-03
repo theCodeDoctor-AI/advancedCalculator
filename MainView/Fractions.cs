@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+using CoreLibrary;
+using ModelLibrary;
 using System.Windows.Forms;
 
 namespace MainView
 {
     public partial class Fractions : Form
     {
+        Fraction first = new Fraction();
+        Fraction second = new Fraction();
+        Fraction result = new Fraction();
+
         Form1 mainView;
         public Fractions(Form1 main)
         {
@@ -29,11 +30,23 @@ namespace MainView
                     "/"
                     }
                 );
+            operatorErrorLabel.Text = "";
+            numberInputErrorLabel.Text = "";
         }
 
         private void SetUpEvents()
         {
             mainViewBtn.Click += MainViewBtn_Click;
+            equalsButton.Click += EqualsButton_Click;
+        }
+
+        private void EqualsButton_Click(object sender, EventArgs e)
+        {
+            string operation = operatorComboBox.SelectedItem.ToString();
+
+            switch(operation)
+            {
+            }
         }
 
         private void MainViewBtn_Click(object sender, EventArgs e)

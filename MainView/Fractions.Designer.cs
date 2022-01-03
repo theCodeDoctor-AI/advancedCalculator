@@ -42,6 +42,8 @@ namespace MainView
             this.operatorComboBox = new System.Windows.Forms.ComboBox();
             this.equalsButton = new System.Windows.Forms.Button();
             this.mainViewBtn = new System.Windows.Forms.Button();
+            this.operatorErrorLabel = new System.Windows.Forms.Label();
+            this.numberInputErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstNumTxt
@@ -149,11 +151,29 @@ namespace MainView
             this.mainViewBtn.Text = "Statistics";
             this.mainViewBtn.UseVisualStyleBackColor = true;
             // 
+            // operatorErrorLabel
+            // 
+            this.operatorErrorLabel.AutoSize = true;
+            this.operatorErrorLabel.Location = new System.Drawing.Point(218, 134);
+            this.operatorErrorLabel.Name = "operatorErrorLabel";
+            this.operatorErrorLabel.Size = new System.Drawing.Size(0, 20);
+            this.operatorErrorLabel.TabIndex = 14;
+            // 
+            // numberInputErrorLabel
+            // 
+            this.numberInputErrorLabel.AutoSize = true;
+            this.numberInputErrorLabel.Location = new System.Drawing.Point(107, 260);
+            this.numberInputErrorLabel.Name = "numberInputErrorLabel";
+            this.numberInputErrorLabel.Size = new System.Drawing.Size(0, 20);
+            this.numberInputErrorLabel.TabIndex = 15;
+            // 
             // Fractions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 450);
+            this.Controls.Add(this.numberInputErrorLabel);
+            this.Controls.Add(this.operatorErrorLabel);
             this.Controls.Add(this.mainViewBtn);
             this.Controls.Add(this.equalsButton);
             this.Controls.Add(this.operatorComboBox);
@@ -189,5 +209,7 @@ namespace MainView
         private System.Windows.Forms.ComboBox operatorComboBox;
         private System.Windows.Forms.Button equalsButton;
         private System.Windows.Forms.Button mainViewBtn;
+        private System.Windows.Forms.Label operatorErrorLabel;
+        private System.Windows.Forms.Label numberInputErrorLabel;
     }
 }
