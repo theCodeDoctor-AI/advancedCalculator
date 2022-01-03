@@ -54,6 +54,7 @@ namespace MainView
             this.leftErrorLabel = new System.Windows.Forms.Label();
             this.rightErrorLabel = new System.Windows.Forms.Label();
             this.modeLabel = new System.Windows.Forms.Label();
+            this.fractionsViewBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inputTxt
@@ -264,11 +265,21 @@ namespace MainView
             this.modeLabel.Size = new System.Drawing.Size(0, 20);
             this.modeLabel.TabIndex = 24;
             // 
+            // fractionsViewBtn
+            // 
+            this.fractionsViewBtn.Location = new System.Drawing.Point(12, 431);
+            this.fractionsViewBtn.Name = "fractionsViewBtn";
+            this.fractionsViewBtn.Size = new System.Drawing.Size(94, 29);
+            this.fractionsViewBtn.TabIndex = 25;
+            this.fractionsViewBtn.Text = "Fractions";
+            this.fractionsViewBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.fractionsViewBtn);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.rightErrorLabel);
             this.Controls.Add(this.leftErrorLabel);
@@ -328,6 +339,7 @@ namespace MainView
         private System.Windows.Forms.Label leftErrorLabel;
         private System.Windows.Forms.Label rightErrorLabel;
         private System.Windows.Forms.Label modeLabel;
+        private System.Windows.Forms.Button fractionsViewBtn;
     }
 }
 
