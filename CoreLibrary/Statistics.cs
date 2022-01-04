@@ -214,9 +214,9 @@ namespace CoreLibrary
         public static double Percentile(double percentile, List<double> numbers)
         {
             double location = percentile * numbers.Count;
-            if(CheckIfDecimal(location))
+            if(!CheckIfDecimal(location))
             {
-                return numbers[(int)Math.Ceiling(location) - 1];
+                return (numbers[(int)Math.Ceiling(location) - 1] + numbers[(int)Math.Ceiling(location)]) / 2.0;
             }
             return numbers[(int)Math.Floor(location) - 1];
         }
@@ -224,9 +224,9 @@ namespace CoreLibrary
         public static double Percentile(double percentile, List<int> numbers)
         {
             double location = percentile * numbers.Count;
-            if (CheckIfDecimal(location))
+            if (!CheckIfDecimal(location))
             {
-                return numbers[(int)Math.Ceiling(location) - 1];
+                return (numbers[(int)Math.Ceiling(location) - 1] + numbers[(int)Math.Ceiling(location)]) / 2.0;
             }
             return numbers[(int)Math.Floor(location) - 1];
         }
