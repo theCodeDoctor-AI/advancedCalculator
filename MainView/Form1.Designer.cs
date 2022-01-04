@@ -55,6 +55,15 @@ namespace MainView
             this.rightErrorLabel = new System.Windows.Forms.Label();
             this.modeLabel = new System.Windows.Forms.Label();
             this.fractionsViewBtn = new System.Windows.Forms.Button();
+            this.quartileNumeric = new System.Windows.Forms.NumericUpDown();
+            this.percentileNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.setNameTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // inputTxt
@@ -78,9 +87,10 @@ namespace MainView
             // 
             this.buttonSuccessLabel.AutoEllipsis = true;
             this.buttonSuccessLabel.AutoSize = true;
+            this.buttonSuccessLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSuccessLabel.Location = new System.Drawing.Point(553, 206);
             this.buttonSuccessLabel.Name = "buttonSuccessLabel";
-            this.buttonSuccessLabel.Size = new System.Drawing.Size(50, 20);
+            this.buttonSuccessLabel.Size = new System.Drawing.Size(70, 25);
             this.buttonSuccessLabel.TabIndex = 2;
             this.buttonSuccessLabel.Text = "label1";
             // 
@@ -95,7 +105,7 @@ namespace MainView
             // 
             // meanBtn
             // 
-            this.meanBtn.Location = new System.Drawing.Point(27, 256);
+            this.meanBtn.Location = new System.Drawing.Point(34, 309);
             this.meanBtn.Name = "meanBtn";
             this.meanBtn.Size = new System.Drawing.Size(94, 29);
             this.meanBtn.TabIndex = 4;
@@ -104,7 +114,7 @@ namespace MainView
             // 
             // medianBtn
             // 
-            this.medianBtn.Location = new System.Drawing.Point(171, 326);
+            this.medianBtn.Location = new System.Drawing.Point(171, 355);
             this.medianBtn.Name = "medianBtn";
             this.medianBtn.Size = new System.Drawing.Size(94, 29);
             this.medianBtn.TabIndex = 5;
@@ -113,7 +123,7 @@ namespace MainView
             // 
             // modeBtn
             // 
-            this.modeBtn.Location = new System.Drawing.Point(362, 389);
+            this.modeBtn.Location = new System.Drawing.Point(362, 404);
             this.modeBtn.Name = "modeBtn";
             this.modeBtn.Size = new System.Drawing.Size(94, 29);
             this.modeBtn.TabIndex = 6;
@@ -122,7 +132,7 @@ namespace MainView
             // 
             // quartileBtn
             // 
-            this.quartileBtn.Location = new System.Drawing.Point(509, 457);
+            this.quartileBtn.Location = new System.Drawing.Point(314, 455);
             this.quartileBtn.Name = "quartileBtn";
             this.quartileBtn.Size = new System.Drawing.Size(94, 29);
             this.quartileBtn.TabIndex = 7;
@@ -131,7 +141,7 @@ namespace MainView
             // 
             // percentileBtn
             // 
-            this.percentileBtn.Location = new System.Drawing.Point(693, 457);
+            this.percentileBtn.Location = new System.Drawing.Point(667, 458);
             this.percentileBtn.Name = "percentileBtn";
             this.percentileBtn.Size = new System.Drawing.Size(94, 29);
             this.percentileBtn.TabIndex = 8;
@@ -140,7 +150,7 @@ namespace MainView
             // 
             // iqrBtn
             // 
-            this.iqrBtn.Location = new System.Drawing.Point(855, 389);
+            this.iqrBtn.Location = new System.Drawing.Point(855, 407);
             this.iqrBtn.Name = "iqrBtn";
             this.iqrBtn.Size = new System.Drawing.Size(94, 29);
             this.iqrBtn.TabIndex = 9;
@@ -149,7 +159,7 @@ namespace MainView
             // 
             // varianceBtn
             // 
-            this.varianceBtn.Location = new System.Drawing.Point(1004, 326);
+            this.varianceBtn.Location = new System.Drawing.Point(1004, 357);
             this.varianceBtn.Name = "varianceBtn";
             this.varianceBtn.Size = new System.Drawing.Size(94, 29);
             this.varianceBtn.TabIndex = 10;
@@ -158,65 +168,67 @@ namespace MainView
             // 
             // stddevBtn
             // 
-            this.stddevBtn.Location = new System.Drawing.Point(1168, 256);
+            this.stddevBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.stddevBtn.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.stddevBtn.Location = new System.Drawing.Point(1158, 309);
             this.stddevBtn.Name = "stddevBtn";
             this.stddevBtn.Size = new System.Drawing.Size(94, 29);
             this.stddevBtn.TabIndex = 11;
             this.stddevBtn.Text = "Std dev.";
-            this.stddevBtn.UseVisualStyleBackColor = true;
+            this.stddevBtn.UseVisualStyleBackColor = false;
             // 
             // meanTxt
             // 
-            this.meanTxt.Location = new System.Drawing.Point(127, 256);
+            this.meanTxt.Location = new System.Drawing.Point(134, 311);
             this.meanTxt.Name = "meanTxt";
             this.meanTxt.Size = new System.Drawing.Size(125, 27);
             this.meanTxt.TabIndex = 12;
             // 
             // medianTxt
             // 
-            this.medianTxt.Location = new System.Drawing.Point(271, 328);
+            this.medianTxt.Location = new System.Drawing.Point(271, 357);
             this.medianTxt.Name = "medianTxt";
             this.medianTxt.Size = new System.Drawing.Size(125, 27);
             this.medianTxt.TabIndex = 13;
             // 
             // modeTxt
             // 
-            this.modeTxt.Location = new System.Drawing.Point(462, 389);
+            this.modeTxt.Location = new System.Drawing.Point(462, 408);
             this.modeTxt.Name = "modeTxt";
             this.modeTxt.Size = new System.Drawing.Size(125, 27);
             this.modeTxt.TabIndex = 14;
             // 
             // quartileTxt
             // 
-            this.quartileTxt.Location = new System.Drawing.Point(378, 457);
+            this.quartileTxt.Location = new System.Drawing.Point(462, 457);
             this.quartileTxt.Name = "quartileTxt";
             this.quartileTxt.Size = new System.Drawing.Size(125, 27);
             this.quartileTxt.TabIndex = 15;
             // 
             // percentileTxt
             // 
-            this.percentileTxt.Location = new System.Drawing.Point(793, 459);
+            this.percentileTxt.Location = new System.Drawing.Point(824, 459);
             this.percentileTxt.Name = "percentileTxt";
             this.percentileTxt.Size = new System.Drawing.Size(125, 27);
             this.percentileTxt.TabIndex = 16;
             // 
             // iqrTxt
             // 
-            this.iqrTxt.Location = new System.Drawing.Point(724, 389);
+            this.iqrTxt.Location = new System.Drawing.Point(724, 408);
             this.iqrTxt.Name = "iqrTxt";
             this.iqrTxt.Size = new System.Drawing.Size(125, 27);
             this.iqrTxt.TabIndex = 17;
             // 
             // varianceTxt
             // 
-            this.varianceTxt.Location = new System.Drawing.Point(873, 328);
+            this.varianceTxt.Location = new System.Drawing.Point(873, 359);
             this.varianceTxt.Name = "varianceTxt";
             this.varianceTxt.Size = new System.Drawing.Size(125, 27);
             this.varianceTxt.TabIndex = 18;
             // 
             // stddevTxt
             // 
-            this.stddevTxt.Location = new System.Drawing.Point(1037, 258);
+            this.stddevTxt.Location = new System.Drawing.Point(1027, 311);
             this.stddevTxt.Name = "stddevTxt";
             this.stddevTxt.Size = new System.Drawing.Size(125, 27);
             this.stddevTxt.TabIndex = 19;
@@ -274,11 +286,75 @@ namespace MainView
             this.fractionsViewBtn.Text = "Fractions";
             this.fractionsViewBtn.UseVisualStyleBackColor = true;
             // 
+            // quartileNumeric
+            // 
+            this.quartileNumeric.Location = new System.Drawing.Point(417, 455);
+            this.quartileNumeric.Name = "quartileNumeric";
+            this.quartileNumeric.Size = new System.Drawing.Size(39, 27);
+            this.quartileNumeric.TabIndex = 26;
+            // 
+            // percentileNumeric
+            // 
+            this.percentileNumeric.Location = new System.Drawing.Point(767, 459);
+            this.percentileNumeric.Name = "percentileNumeric";
+            this.percentileNumeric.Size = new System.Drawing.Size(51, 27);
+            this.percentileNumeric.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 408);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "New Features are Added Here!";
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.Location = new System.Drawing.Point(1205, 257);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(94, 29);
+            this.saveBtn.TabIndex = 29;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            // 
+            // setNameTxt
+            // 
+            this.setNameTxt.Location = new System.Drawing.Point(1027, 259);
+            this.setNameTxt.Name = "setNameTxt";
+            this.setNameTxt.Size = new System.Drawing.Size(172, 27);
+            this.setNameTxt.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1027, 229);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 20);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Name your set and save";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(965, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Name: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.setNameTxt);
+            this.Controls.Add(this.saveBtn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.percentileNumeric);
+            this.Controls.Add(this.quartileNumeric);
             this.Controls.Add(this.fractionsViewBtn);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.rightErrorLabel);
@@ -307,6 +383,8 @@ namespace MainView
             this.Controls.Add(this.inputTxt);
             this.Name = "Form1";
             this.Text = "Welcome";
+            ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,6 +418,13 @@ namespace MainView
         private System.Windows.Forms.Label rightErrorLabel;
         private System.Windows.Forms.Label modeLabel;
         private System.Windows.Forms.Button fractionsViewBtn;
+        private System.Windows.Forms.NumericUpDown quartileNumeric;
+        private System.Windows.Forms.NumericUpDown percentileNumeric;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.TextBox setNameTxt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

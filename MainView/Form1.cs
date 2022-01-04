@@ -38,20 +38,17 @@ namespace MainView
 
         private void Percentile_Click(object sender, EventArgs e)
         {
-            double selection = Convert.ToDouble(percentileTxt.Text);
-            percentileTxt.Text = "";
-            percentileTxt.Text = Statistics.Percentile(selection, inputNumbers).ToString();
+            percentileTxt.Text = Statistics.Percentile((double)percentileNumeric.Value / 100, inputNumbers).ToString();
         }
 
         private void QuartileBtn_Click(object sender, EventArgs e)
         {
-            int quartile = Convert.ToInt32(quartileTxt.Text);
-            quartileTxt.Text = "";
-            quartileTxt.Text = Statistics.Quartile(quartile, inputNumbers).ToString();
+            quartileTxt.Text = Statistics.Quartile((int)quartileNumeric.Value, inputNumbers).ToString();
         }
 
         private void ModeBtn_Click(object sender, EventArgs e)
         {
+            modeTxt.Text = "Under Construction";
             //List<int> modeNumbers = Statistics.Mode(inputNumbers);
             //if(modeNumbers.Count == 0)
             //{
@@ -110,7 +107,12 @@ namespace MainView
             DisplayInRightBox(inputNumbers);
             DisplayInLeftBox(inputNumbers);
         }
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+        }
 
+
+        // New Views 
         private void FractionsViewBtn_Click(object sender, EventArgs e)
         {
             Hide();
@@ -119,29 +121,20 @@ namespace MainView
 
         #endregion
 
-        public void DisplayInRightBox(List<int> numbers)
-        {
-            foreach(int num in numbers)
-            {
-                rightListBox.Items.Add(num);
-            }
-        }
-
-        public void DisplayInLeftBox(List<int> numbers)
-        {
-            //string output = "Some general stats of your set:" +
-            //    "Total entries: " + inputNumbers.Count + "\n\n" +
-            //    "High: " + inputNumbers.Max() + "\n\n" +
-            //    "Low: " + inputNumbers.Min() + "\n\n";
-            //leftListBox.Items.Add(output);
-        }
+        #region Setup and Display
 
         private void SetUpDefaults()
         {
             welcomeLabel.Text = "Enter a series of numbers separated each by a space \nand then click the button when your all done";
             buttonSuccessLabel.Text = "";
             leftErrorLabel.Text = "";
-            rightErrorLabel.Text = "";
+            rightErrorLabel.Text = "";            
+
+            // Setting up numerical up/downs
+            quartileNumeric.Minimum = 1;
+            quartileNumeric.Maximum = 3;
+            percentileNumeric.Minimum = 1;
+            percentileNumeric.Maximum = 99;
         }
 
         private void SetUpEvents()
@@ -156,7 +149,28 @@ namespace MainView
             varianceBtn.Click += VarianceBtn_Click;
             stddevBtn.Click += StddevBtn_Click;
             fractionsViewBtn.Click += FractionsViewBtn_Click;
+            saveBtn.Click += SaveBtn_Click;
         }
 
+
+        // Display
+        public void DisplayInRightBox(List<int> numbers)
+        {
+            foreach (int num in numbers)
+            {
+                rightListBox.Items.Add(num);
+            }
+        }
+
+        public void DisplayInLeftBox(List<int> numbers)
+        {
+            leftListBox.Items.Clear();
+            leftListBox.Items.Add("Some general statistics of your set:");
+            leftListBox.Items.Add($"Total entries - {inputNumbers.Count()}");
+            leftListBox.Items.Add($"High - {inputNumbers.Count()}");
+            leftListBox.Items.Add($"Low - {inputNumbers.Count()}");
+        }
+
+        #endregion
     }
 }

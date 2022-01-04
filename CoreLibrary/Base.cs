@@ -61,7 +61,7 @@ namespace CoreLibrary
 
         #region CheckForDecimal
         // Clearly typed method
-        public static bool CheckIfDecimal(double number) 
+        public static bool IsDecimal(double number) 
         {
             if (number % 1 == 0)
             {
@@ -71,9 +71,9 @@ namespace CoreLibrary
         }
 
         // A little crafty
-        public static bool CheckIfDecimal(float number) => number % 1 != 0;
+        public static bool IsDecimal(float number) => number % 1 != 0;
 
-        public static bool CheckIfDecimal(int number) => number % 1 != 0;
+        public static bool IsDecimal(int number) => number % 1 != 0;
         #endregion
 
         #region Power
