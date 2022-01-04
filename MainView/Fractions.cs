@@ -66,9 +66,9 @@ namespace MainView
             }
 
             // evaluate the 
-            switch (operation)
-            {
-            }
+            //switch (operation)
+            //{
+            //}
         }
 
         private void MainViewBtn_Click(object sender, EventArgs e)
