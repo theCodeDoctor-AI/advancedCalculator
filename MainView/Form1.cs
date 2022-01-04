@@ -107,10 +107,10 @@ namespace MainView
             DisplayInRightBox(inputNumbers);
             DisplayInLeftBox(inputNumbers);
         }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
         }
-
 
         // New Views 
         private void FractionsViewBtn_Click(object sender, EventArgs e)
