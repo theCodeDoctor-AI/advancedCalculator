@@ -48,6 +48,7 @@ namespace MainView
 
         private void ModeBtn_Click(object sender, EventArgs e)
         {
+            modeTxt.Text = "Under Construction";
             //List<int> modeNumbers = Statistics.Mode(inputNumbers);
             //if(modeNumbers.Count == 0)
             //{
@@ -106,6 +107,9 @@ namespace MainView
             DisplayInRightBox(inputNumbers);
             DisplayInLeftBox(inputNumbers);
         }
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+        }
 
 
         // New Views 
@@ -145,7 +149,9 @@ namespace MainView
             varianceBtn.Click += VarianceBtn_Click;
             stddevBtn.Click += StddevBtn_Click;
             fractionsViewBtn.Click += FractionsViewBtn_Click;
+            saveBtn.Click += SaveBtn_Click;
         }
+
 
         // Display
         public void DisplayInRightBox(List<int> numbers)
