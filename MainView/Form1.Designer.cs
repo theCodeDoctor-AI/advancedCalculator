@@ -55,6 +55,10 @@ namespace MainView
             this.rightErrorLabel = new System.Windows.Forms.Label();
             this.modeLabel = new System.Windows.Forms.Label();
             this.fractionsViewBtn = new System.Windows.Forms.Button();
+            this.quartileNumeric = new System.Windows.Forms.NumericUpDown();
+            this.percentileNumeric = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // inputTxt
@@ -122,7 +126,7 @@ namespace MainView
             // 
             // quartileBtn
             // 
-            this.quartileBtn.Location = new System.Drawing.Point(509, 457);
+            this.quartileBtn.Location = new System.Drawing.Point(314, 455);
             this.quartileBtn.Name = "quartileBtn";
             this.quartileBtn.Size = new System.Drawing.Size(94, 29);
             this.quartileBtn.TabIndex = 7;
@@ -131,7 +135,7 @@ namespace MainView
             // 
             // percentileBtn
             // 
-            this.percentileBtn.Location = new System.Drawing.Point(693, 457);
+            this.percentileBtn.Location = new System.Drawing.Point(667, 458);
             this.percentileBtn.Name = "percentileBtn";
             this.percentileBtn.Size = new System.Drawing.Size(94, 29);
             this.percentileBtn.TabIndex = 8;
@@ -188,14 +192,14 @@ namespace MainView
             // 
             // quartileTxt
             // 
-            this.quartileTxt.Location = new System.Drawing.Point(378, 457);
+            this.quartileTxt.Location = new System.Drawing.Point(462, 457);
             this.quartileTxt.Name = "quartileTxt";
             this.quartileTxt.Size = new System.Drawing.Size(125, 27);
             this.quartileTxt.TabIndex = 15;
             // 
             // percentileTxt
             // 
-            this.percentileTxt.Location = new System.Drawing.Point(793, 459);
+            this.percentileTxt.Location = new System.Drawing.Point(824, 459);
             this.percentileTxt.Name = "percentileTxt";
             this.percentileTxt.Size = new System.Drawing.Size(125, 27);
             this.percentileTxt.TabIndex = 16;
@@ -274,11 +278,27 @@ namespace MainView
             this.fractionsViewBtn.Text = "Fractions";
             this.fractionsViewBtn.UseVisualStyleBackColor = true;
             // 
+            // quartileNumeric
+            // 
+            this.quartileNumeric.Location = new System.Drawing.Point(417, 455);
+            this.quartileNumeric.Name = "quartileNumeric";
+            this.quartileNumeric.Size = new System.Drawing.Size(39, 27);
+            this.quartileNumeric.TabIndex = 26;
+            // 
+            // percentileNumeric
+            // 
+            this.percentileNumeric.Location = new System.Drawing.Point(767, 459);
+            this.percentileNumeric.Name = "percentileNumeric";
+            this.percentileNumeric.Size = new System.Drawing.Size(51, 27);
+            this.percentileNumeric.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.percentileNumeric);
+            this.Controls.Add(this.quartileNumeric);
             this.Controls.Add(this.fractionsViewBtn);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.rightErrorLabel);
@@ -307,6 +327,8 @@ namespace MainView
             this.Controls.Add(this.inputTxt);
             this.Name = "Form1";
             this.Text = "Welcome";
+            ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,6 +362,8 @@ namespace MainView
         private System.Windows.Forms.Label rightErrorLabel;
         private System.Windows.Forms.Label modeLabel;
         private System.Windows.Forms.Button fractionsViewBtn;
+        private System.Windows.Forms.NumericUpDown quartileNumeric;
+        private System.Windows.Forms.NumericUpDown percentileNumeric;
     }
 }
 

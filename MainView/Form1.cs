@@ -45,9 +45,10 @@ namespace MainView
 
         private void QuartileBtn_Click(object sender, EventArgs e)
         {
-            int quartile = Convert.ToInt32(quartileTxt.Text);
-            quartileTxt.Text = "";
-            quartileTxt.Text = Statistics.Quartile(quartile, inputNumbers).ToString();
+            quartileTxt.Text = Statistics.Quartile((int)quartileNumeric.Value, inputNumbers).ToString();
+            //int quartile = Convert.ToInt32(quartileTxt.Text);
+            //quartileTxt.Text = "";
+            //quartileTxt.Text = Statistics.Quartile(quartile, inputNumbers).ToString();
         }
 
         private void ModeBtn_Click(object sender, EventArgs e)
@@ -142,6 +143,12 @@ namespace MainView
             buttonSuccessLabel.Text = "";
             leftErrorLabel.Text = "";
             rightErrorLabel.Text = "";
+
+            // Setting up numerical up/downs
+            quartileNumeric.Minimum = 1;
+            quartileNumeric.Maximum = 3;
+            percentileNumeric.Minimum = 1;
+            percentileNumeric.Maximum = 99;
         }
 
         private void SetUpEvents()
