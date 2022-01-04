@@ -57,6 +57,7 @@ namespace MainView
             this.fractionsViewBtn = new System.Windows.Forms.Button();
             this.quartileNumeric = new System.Windows.Forms.NumericUpDown();
             this.percentileNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).BeginInit();
             this.SuspendLayout();
@@ -82,9 +83,10 @@ namespace MainView
             // 
             this.buttonSuccessLabel.AutoEllipsis = true;
             this.buttonSuccessLabel.AutoSize = true;
+            this.buttonSuccessLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSuccessLabel.Location = new System.Drawing.Point(553, 206);
             this.buttonSuccessLabel.Name = "buttonSuccessLabel";
-            this.buttonSuccessLabel.Size = new System.Drawing.Size(50, 20);
+            this.buttonSuccessLabel.Size = new System.Drawing.Size(70, 25);
             this.buttonSuccessLabel.TabIndex = 2;
             this.buttonSuccessLabel.Text = "label1";
             // 
@@ -162,12 +164,14 @@ namespace MainView
             // 
             // stddevBtn
             // 
+            this.stddevBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.stddevBtn.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.stddevBtn.Location = new System.Drawing.Point(1168, 256);
             this.stddevBtn.Name = "stddevBtn";
             this.stddevBtn.Size = new System.Drawing.Size(94, 29);
             this.stddevBtn.TabIndex = 11;
             this.stddevBtn.Text = "Std dev.";
-            this.stddevBtn.UseVisualStyleBackColor = true;
+            this.stddevBtn.UseVisualStyleBackColor = false;
             // 
             // meanTxt
             // 
@@ -292,11 +296,21 @@ namespace MainView
             this.percentileNumeric.Size = new System.Drawing.Size(51, 27);
             this.percentileNumeric.TabIndex = 27;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 408);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "New Features are Added Here!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.percentileNumeric);
             this.Controls.Add(this.quartileNumeric);
             this.Controls.Add(this.fractionsViewBtn);
@@ -364,6 +378,7 @@ namespace MainView
         private System.Windows.Forms.Button fractionsViewBtn;
         private System.Windows.Forms.NumericUpDown quartileNumeric;
         private System.Windows.Forms.NumericUpDown percentileNumeric;
+        private System.Windows.Forms.Label label1;
     }
 }
 

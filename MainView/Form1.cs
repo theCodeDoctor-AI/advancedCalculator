@@ -158,6 +158,12 @@ namespace MainView
 
         public void DisplayInLeftBox(List<int> numbers)
         {
+            string output = $"Some general stats of your set: " +
+                $"Total entries - { inputNumbers.Count() }" +
+                $"High - { inputNumbers.Max() }" +
+                $"Low - { inputNumbers.Min() }";
+
+            leftListBox.Items.Add(output);
             //string output = "Some general stats of your set:" +
             //    "Total entries: " + inputNumbers.Count + "\n\n" +
             //    "High: " + inputNumbers.Max() + "\n\n" +
