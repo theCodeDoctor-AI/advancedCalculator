@@ -124,8 +124,7 @@ namespace MainView
             welcomeLabel.Text = "Enter a series of numbers separated each by a space \nand then click the button when your all done";
             buttonSuccessLabel.Text = "";
             leftErrorLabel.Text = "";
-            rightErrorLabel.Text = "";
-            leftListBox.Items.Add("Some general statistics of your set:");
+            rightErrorLabel.Text = "";            
 
             // Setting up numerical up/downs
             quartileNumeric.Minimum = 1;
@@ -159,19 +158,11 @@ namespace MainView
 
         public void DisplayInLeftBox(List<int> numbers)
         {
-            //string output = $"Some general stats of your set: \n" +
-            //    $"Total entries - { inputNumbers.Count() }\n" +
-            //    $"High - { inputNumbers.Max() }\n" +
-            //    $"Low - { inputNumbers.Min() }\n";
-
+            leftListBox.Items.Clear();
+            leftListBox.Items.Add("Some general statistics of your set:");
             leftListBox.Items.Add($"Total entries - {inputNumbers.Count()}");
             leftListBox.Items.Add($"High - {inputNumbers.Count()}");
             leftListBox.Items.Add($"Low - {inputNumbers.Count()}");
-            //string output = "Some general stats of your set:" +
-            //    "Total entries: " + inputNumbers.Count + "\n\n" +
-            //    "High: " + inputNumbers.Max() + "\n\n" +
-            //    "Low: " + inputNumbers.Min() + "\n\n";
-            //leftListBox.Items.Add(output);
         }
 
         #endregion
