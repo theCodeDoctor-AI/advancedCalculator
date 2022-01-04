@@ -46,9 +46,6 @@ namespace MainView
         private void QuartileBtn_Click(object sender, EventArgs e)
         {
             quartileTxt.Text = Statistics.Quartile((int)quartileNumeric.Value, inputNumbers).ToString();
-            //int quartile = Convert.ToInt32(quartileTxt.Text);
-            //quartileTxt.Text = "";
-            //quartileTxt.Text = Statistics.Quartile(quartile, inputNumbers).ToString();
         }
 
         private void ModeBtn_Click(object sender, EventArgs e)
@@ -112,6 +109,8 @@ namespace MainView
             DisplayInLeftBox(inputNumbers);
         }
 
+
+        // New Views 
         private void FractionsViewBtn_Click(object sender, EventArgs e)
         {
             Hide();
@@ -120,22 +119,7 @@ namespace MainView
 
         #endregion
 
-        public void DisplayInRightBox(List<int> numbers)
-        {
-            foreach(int num in numbers)
-            {
-                rightListBox.Items.Add(num);
-            }
-        }
-
-        public void DisplayInLeftBox(List<int> numbers)
-        {
-            //string output = "Some general stats of your set:" +
-            //    "Total entries: " + inputNumbers.Count + "\n\n" +
-            //    "High: " + inputNumbers.Max() + "\n\n" +
-            //    "Low: " + inputNumbers.Min() + "\n\n";
-            //leftListBox.Items.Add(output);
-        }
+        #region Setup and Display
 
         private void SetUpDefaults()
         {
@@ -165,5 +149,24 @@ namespace MainView
             fractionsViewBtn.Click += FractionsViewBtn_Click;
         }
 
+        // Display
+        public void DisplayInRightBox(List<int> numbers)
+        {
+            foreach (int num in numbers)
+            {
+                rightListBox.Items.Add(num);
+            }
+        }
+
+        public void DisplayInLeftBox(List<int> numbers)
+        {
+            //string output = "Some general stats of your set:" +
+            //    "Total entries: " + inputNumbers.Count + "\n\n" +
+            //    "High: " + inputNumbers.Max() + "\n\n" +
+            //    "Low: " + inputNumbers.Min() + "\n\n";
+            //leftListBox.Items.Add(output);
+        }
+
+        #endregion
     }
 }
