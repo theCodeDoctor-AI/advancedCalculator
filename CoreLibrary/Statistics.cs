@@ -49,7 +49,7 @@ namespace CoreLibrary
         public static double Median(params int[] numbers)
         {
             double location = (numbers.Length + 1.0) / 2;
-            if (CheckIfDecimal(location))
+            if (IsDecimal(location))
             {
                 int locationInt = (int)Math.Floor(location);
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
@@ -64,7 +64,7 @@ namespace CoreLibrary
         {
             double loc = (numbers.Count() + 1.0) / 2.0;
 
-            if (CheckIfDecimal(loc))
+            if (IsDecimal(loc))
             {
                 int locationInt = (int)loc;
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
@@ -79,7 +79,7 @@ namespace CoreLibrary
         {
             double loc = (numbers.Count() + 1.0) / 2.0;
 
-            if (CheckIfDecimal(loc))
+            if (IsDecimal(loc))
             {
                 int locationInt = (int)loc;
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0f;
@@ -93,7 +93,7 @@ namespace CoreLibrary
         public static double Median(List<int> numbers)
         {
             double location = (numbers.Count + 1.0) / 2;
-            if (CheckIfDecimal(location))
+            if (IsDecimal(location))
             {
                 int locationInt = (int)location;
                 return (numbers[locationInt - 1] + numbers[locationInt]) / 2.0;
@@ -214,7 +214,7 @@ namespace CoreLibrary
         public static double Percentile(double percentile, List<double> numbers)
         {
             double location = percentile * numbers.Count;
-            if(!CheckIfDecimal(location))
+            if(!IsDecimal(location))
             {
                 return (numbers[(int)Math.Ceiling(location) - 1] + numbers[(int)Math.Ceiling(location)]) / 2.0;
             }
@@ -223,12 +223,14 @@ namespace CoreLibrary
 
         public static double Percentile(double percentile, List<int> numbers)
         {
+            if(percentile <= 0.1) { return numbers[0]; }
+
             double location = percentile * numbers.Count;
-            if (!CheckIfDecimal(location))
+            if (!IsDecimal(location))
             {
-                return (numbers[(int)Math.Ceiling(location) - 1] + numbers[(int)Math.Ceiling(location)]) / 2.0;
+                return (numbers[(int)location - 1] + numbers[(int)location]) / 2.0;
             }
-            return numbers[(int)Math.Floor(location) - 1];
+            return numbers[(int)Math.Floor(location)];
         }
         #endregion
 

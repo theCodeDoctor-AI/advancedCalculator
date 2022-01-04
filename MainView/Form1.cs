@@ -38,9 +38,7 @@ namespace MainView
 
         private void Percentile_Click(object sender, EventArgs e)
         {
-            double selection = Convert.ToDouble(percentileTxt.Text);
-            percentileTxt.Text = "";
-            percentileTxt.Text = Statistics.Percentile(selection, inputNumbers).ToString();
+            percentileTxt.Text = Statistics.Percentile((double)percentileNumeric.Value / 100, inputNumbers).ToString();
         }
 
         private void QuartileBtn_Click(object sender, EventArgs e)
