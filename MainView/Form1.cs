@@ -173,8 +173,8 @@ namespace MainView
             leftListBox.Items.Clear();
             leftListBox.Items.Add("Some general statistics of your set:");
             leftListBox.Items.Add($"Total entries - {inputNumbers.Count()}");
-            leftListBox.Items.Add($"High - {inputNumbers.Count()}");
-            leftListBox.Items.Add($"Low - {inputNumbers.Count()}");
+            leftListBox.Items.Add($"High - {inputNumbers.Max()}");
+            leftListBox.Items.Add($"Low - {inputNumbers.Min()}");
         }
 
         #endregion

@@ -62,6 +62,8 @@ namespace MainView
             this.setNameTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).BeginInit();
             this.SuspendLayout();
@@ -248,7 +250,7 @@ namespace MainView
             this.leftListBox.ItemHeight = 20;
             this.leftListBox.Location = new System.Drawing.Point(12, 22);
             this.leftListBox.Name = "leftListBox";
-            this.leftListBox.Size = new System.Drawing.Size(282, 204);
+            this.leftListBox.Size = new System.Drawing.Size(282, 124);
             this.leftListBox.TabIndex = 21;
             // 
             // leftErrorLabel
@@ -343,11 +345,31 @@ namespace MainView
             this.label3.TabIndex = 32;
             this.label3.Text = "Name: ";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(12, 152);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(282, 104);
+            this.listBox1.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 257);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "label4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.ClientSize = new System.Drawing.Size(1316, 545);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.setNameTxt);
@@ -425,6 +447,8 @@ namespace MainView
         private System.Windows.Forms.TextBox setNameTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
