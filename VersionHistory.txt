@@ -1,5 +1,8 @@
 Version History (Latest on Top)
 
+V0.0.8
+  Qol upgrades/ Bug Fixing/ Data Persistance
+
 V0.0.6
   Builds Fractions view
   - Adds controls and sets up events

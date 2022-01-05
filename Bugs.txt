@@ -4,4 +4,6 @@ O = Old
 
 V0.0.1 - Statistics
  N - Mode() is returning a collection?   SOLVED
- N - Quartile and Percentile need exception handling 
+ N - Mode() returning incorrect numbers in multiple scenarios
+ N - Quartile and Percentile need exception handling  SOLVED
+ N - Left List Box not displaying stats correctly   SOLVED
