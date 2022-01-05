@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VBAdNl+3pm6HRCB/jpHw1Hg7BrJKfz45StbAd4QU8GfRlwyeDzXkS2JtFXVW22kW5z8PARDhJTDFS8KPGW9lIg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mark\\source\\repos\\AdvancedCalculator\\RepositroyLibrary\\RepositroyLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mark\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Mark\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Mark\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
