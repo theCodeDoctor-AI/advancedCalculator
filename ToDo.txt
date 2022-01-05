@@ -5,10 +5,19 @@ N = New
 O = Old
 R = Requires Research
 
+January 04, 2021
+
+ N - Add logic to allow loading number sets
+ N - Use extra listbox on right to display saved sets 
+ O - Robustisize the input of a set of numbers
+ O - Allow for decimals
+ O - Handle exceptions on Fractions View
+
 January 03, 2021
+
  N - Handle exceoptions on Fractions View
  N - Title and styling for main view and fractions view  FINISHED
- N - Allow for persisting number sets  FINISHED
+ N - Allow for persisting number sets  FINISHED 
  O - Quartile and Percentile dropdowns  FINISHED
  O - Robustisize the input of a set of numbers
  O - Allow for decimals
