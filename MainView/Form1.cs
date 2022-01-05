@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using CoreLibrary;
+using ModelLibrary;
 using System.Linq;
+using RepositroyLibrary;
 
 namespace MainView
 {
     public partial class Form1 : Form
     {
+        private const string PATH = "NumberSets.json";
+        private readonly NumberSetRepository _numberSetRepository = new NumberSetRepository(PATH);
         private Fractions _fractionView;
         private List<int> inputNumbers = new List<int>();
 
@@ -110,6 +114,8 @@ namespace MainView
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            _numberSetRepository.NumberSets.Add(new NumberSet(inputNumbers, setNameTxt.Text));
+            _numberSetRepository.Save(PATH);
         }
 
         // New Views 

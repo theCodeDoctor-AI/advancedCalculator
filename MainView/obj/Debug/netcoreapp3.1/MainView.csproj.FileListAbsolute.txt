@@ -19,3 +19,8 @@ C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\C
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\ModelLibrary.pdb
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.csproj.CopyComplete
 C:\Users\Mark\source\repos\AdvancedCalculator\MainView\obj\Debug\netcoreapp3.1\MainView.Fractions.resources
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\RepositroyLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\MainView\bin\Debug\netcoreapp3.1\RepositroyLibrary.pdb
