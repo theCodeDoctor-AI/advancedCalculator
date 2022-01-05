@@ -118,6 +118,11 @@ namespace MainView
             _numberSetRepository.Save(PATH);
         }
 
+        private void LoadNumberSetBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         // New Views 
         private void FractionsViewBtn_Click(object sender, EventArgs e)
         {
@@ -156,7 +161,8 @@ namespace MainView
             stddevBtn.Click += StddevBtn_Click;
             fractionsViewBtn.Click += FractionsViewBtn_Click;
             saveBtn.Click += SaveBtn_Click;
-        }
+            loadNumberSetBtn.Click += LoadNumberSetBtn_Click;
+        }       
 
 
         // Display
@@ -173,8 +179,8 @@ namespace MainView
             leftListBox.Items.Clear();
             leftListBox.Items.Add("Some general statistics of your set:");
             leftListBox.Items.Add($"Total entries - {inputNumbers.Count()}");
-            leftListBox.Items.Add($"High - {inputNumbers.Count()}");
-            leftListBox.Items.Add($"Low - {inputNumbers.Count()}");
+            leftListBox.Items.Add($"High - {inputNumbers.Max()}");
+            leftListBox.Items.Add($"Low - {inputNumbers.Min()}");
         }
 
         #endregion

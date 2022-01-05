@@ -62,6 +62,10 @@ namespace MainView
             this.setNameTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.savedNumberSetListBox = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.loadNumberSetBtn = new System.Windows.Forms.Button();
+            this.loadSuccessLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quartileNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.percentileNumeric)).BeginInit();
             this.SuspendLayout();
@@ -248,7 +252,7 @@ namespace MainView
             this.leftListBox.ItemHeight = 20;
             this.leftListBox.Location = new System.Drawing.Point(12, 22);
             this.leftListBox.Name = "leftListBox";
-            this.leftListBox.Size = new System.Drawing.Size(282, 204);
+            this.leftListBox.Size = new System.Drawing.Size(282, 124);
             this.leftListBox.TabIndex = 21;
             // 
             // leftErrorLabel
@@ -343,11 +347,50 @@ namespace MainView
             this.label3.TabIndex = 32;
             this.label3.Text = "Name: ";
             // 
+            // savedNumberSetListBox
+            // 
+            this.savedNumberSetListBox.FormattingEnabled = true;
+            this.savedNumberSetListBox.ItemHeight = 20;
+            this.savedNumberSetListBox.Location = new System.Drawing.Point(12, 152);
+            this.savedNumberSetListBox.Name = "savedNumberSetListBox";
+            this.savedNumberSetListBox.Size = new System.Drawing.Size(282, 104);
+            this.savedNumberSetListBox.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(174, 20);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Load a saved number set";
+            // 
+            // loadNumberSetBtn
+            // 
+            this.loadNumberSetBtn.Location = new System.Drawing.Point(200, 257);
+            this.loadNumberSetBtn.Name = "loadNumberSetBtn";
+            this.loadNumberSetBtn.Size = new System.Drawing.Size(94, 29);
+            this.loadNumberSetBtn.TabIndex = 35;
+            this.loadNumberSetBtn.Text = "Load";
+            this.loadNumberSetBtn.UseVisualStyleBackColor = true;
+            // 
+            // loadSuccessLabel
+            // 
+            this.loadSuccessLabel.AutoSize = true;
+            this.loadSuccessLabel.Location = new System.Drawing.Point(300, 266);
+            this.loadSuccessLabel.Name = "loadSuccessLabel";
+            this.loadSuccessLabel.Size = new System.Drawing.Size(0, 20);
+            this.loadSuccessLabel.TabIndex = 36;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 542);
+            this.ClientSize = new System.Drawing.Size(1316, 545);
+            this.Controls.Add(this.loadSuccessLabel);
+            this.Controls.Add(this.loadNumberSetBtn);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.savedNumberSetListBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.setNameTxt);
@@ -425,6 +468,10 @@ namespace MainView
         private System.Windows.Forms.TextBox setNameTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox savedNumberSetListBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button loadNumberSetBtn;
+        private System.Windows.Forms.Label loadSuccessLabel;
     }
 }
 
