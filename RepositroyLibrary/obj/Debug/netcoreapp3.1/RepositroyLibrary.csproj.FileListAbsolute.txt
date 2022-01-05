@@ -1,0 +1,12 @@
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\bin\Debug\netcoreapp3.1\RepositroyLibrary.deps.json
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\bin\Debug\netcoreapp3.1\RepositroyLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\bin\Debug\netcoreapp3.1\RepositroyLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\bin\Debug\netcoreapp3.1\ModelLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\bin\Debug\netcoreapp3.1\ModelLibrary.pdb
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.csproj.AssemblyReference.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.AssemblyInfoInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.AssemblyInfo.cs
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.csproj.CopyComplete
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.dll
+C:\Users\Mark\source\repos\AdvancedCalculator\RepositroyLibrary\obj\Debug\netcoreapp3.1\RepositroyLibrary.pdb

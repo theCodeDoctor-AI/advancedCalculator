@@ -6,14 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "MainView/1.0.0": {
+      "RepositroyLibrary/1.0.0": {
         "dependencies": {
-          "CoreLibrary": "1.0.0",
           "ModelLibrary": "1.0.0",
-          "RepositroyLibrary": "1.0.0"
+          "System.Text.Json": "6.0.1"
         },
         "runtime": {
-          "MainView.dll": {}
+          "RepositroyLibrary.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -47,32 +46,15 @@
           }
         }
       },
-      "CoreLibrary/1.0.0": {
-        "dependencies": {
-          "ModelLibrary": "1.0.0"
-        },
-        "runtime": {
-          "CoreLibrary.dll": {}
-        }
-      },
       "ModelLibrary/1.0.0": {
         "runtime": {
           "ModelLibrary.dll": {}
-        }
-      },
-      "RepositroyLibrary/1.0.0": {
-        "dependencies": {
-          "ModelLibrary": "1.0.0",
-          "System.Text.Json": "6.0.1"
-        },
-        "runtime": {
-          "RepositroyLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "MainView/1.0.0": {
+    "RepositroyLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -98,17 +80,7 @@
       "path": "system.text.json/6.0.1",
       "hashPath": "system.text.json.6.0.1.nupkg.sha512"
     },
-    "CoreLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "ModelLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "RepositroyLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

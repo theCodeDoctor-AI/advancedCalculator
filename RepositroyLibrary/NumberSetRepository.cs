@@ -19,12 +19,15 @@ namespace RepositroyLibrary
 
         public NumberSetRepository(string path) 
         {
+            _numberSets = new List<NumberSet>();
             if (File.Exists(path)) { Load(path); }
+            else { File.Create("NumberSets.json"); }
         }
 
         public void Load(string path)
         {
             string jsonString = File.ReadAllText(path);
+            if (jsonString == "") { return; }  // Terminate method if file exists but is empty
             _numberSets = JsonSerializer.Deserialize<List<NumberSet>>(jsonString);
         }
 
